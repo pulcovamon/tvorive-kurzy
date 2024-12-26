@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useDrag } from "@use-gesture/react";
 
 const images = [
     "/slideshow/469081208_122168847446249789_5586547136073549947_n.jpg",
@@ -19,24 +20,41 @@ const images = [
 
 
 const Slideshow: React.FC = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-    const goToNextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    };
+  const goToNextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
 
-    const goToPrevSlide = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? images.length - 1 : prevIndex - 1
-        );
-    };
+  const goToPrevSlide = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
 
-    return (
-        <div className="slideshow">
-            <img
-                src={images[currentIndex]}
-                alt="Slideshow"
-            />
+  const bind = useDrag(
+    ({ movement: [dx], last }) => {
+      if (last) {
+        if (dx > 50) goToPrevSlide();
+        if (dx < -50) goToNextSlide();
+      }
+    },
+    { preventDefault: true, filterTaps: true }
+  );
+
+  return (
+    <div className="slideshow" {...bind()}>
+      <div
+        className="slideshow-track"
+        style={{
+          transform: `translateX(${-currentIndex * 100}%)`,
+          transition: "transform 0.5s ease-in-out",
+        }}
+      >
+        {images.map((src, index) => (
+          <img key={index} src={src} alt={`Slide ${index}`} draggable="false" />
+        ))}
+      </div>
       <div className="controls">
         <button onClick={goToPrevSlide}>
           <i className="fa fa-chevron-left"></i>
@@ -46,7 +64,7 @@ const Slideshow: React.FC = () => {
         </button>
       </div>
     </div>
-    );
+  );
 };
 
 export default Slideshow;
