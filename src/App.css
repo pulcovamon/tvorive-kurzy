@@ -21,13 +21,13 @@ body {
   top: 0;
   left: 25%;
   z-index: 1;
-  height: 7vh;
+  height: 100px;
   font-family: 'Cinzel', serif !important;
   font-size: 0.6em;
 }
 
 .header h1 {
-  margin: 0;
+  margin: 15px 0;
   font-size: 2.5em;
   font-family: 'Cinzel', serif;
 }
@@ -58,7 +58,7 @@ body {
 }
 
 .navbar {
-  width: 200px;
+  width: 250px;
   height: 50vh;
   position: fixed;
   top: 0;
@@ -102,7 +102,15 @@ body {
   color: white;
 }
 
+.navbar a:active {
+  background-color: #4C4B16;
+  color: white;
+}
+
 .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
   padding: 20px;
   margin-left: 250px;
@@ -114,15 +122,15 @@ h2 {
 }
 
 .navbar-img {
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
 .background-palette {
-  width: 60vw;
-  position: absolute;
+  width: 1000px;
+  position: fixed;
   right: -750px;
-  top: -5vh;
+  top: 0;
   z-index: 5;
 }
 
@@ -134,28 +142,22 @@ h2 {
 
 .home-page {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 30px;
-  padding: 20px;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
 }
 
 .text-container {
   flex-grow: 1;
-  padding: 10%;
-  max-width: calc(100% - 25vw);
-  box-sizing: border-box;
+  max-width: 800px;
   align-content: center;
 }
 
 .brush-effect {
   font-size: 1em;
-  font-weight: bold;
-  color: white;
   text-align: center;
-  padding: 5%;
+  padding: 2%;
   background: linear-gradient(to right, #FA4032, #FA812F);
-  -webkit-mask-image: url('pain.png');
   mask-image: url('paint2.png');
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
@@ -169,8 +171,8 @@ h2 {
 
 .slideshow {
   position: relative;
-  width: 25vw;
-  height: 60vh;
+  width: 400px;
+  height: 700px;
   margin: 0 auto;
   overflow: hidden;
   display: flex;
@@ -178,10 +180,6 @@ h2 {
   align-items: center;
 
   background: linear-gradient(to right, #FA4032, #FA812F);
-
-  -webkit-mask-image: url('paint2.png');
-  -webkit-mask-size: 200% 200%;
-  -webkit-mask-repeat: no-repeat;
   mask-image: url('paint2.png');
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
@@ -212,7 +210,7 @@ h2 {
   z-index: 10;
 }
 
-button {
+.slideshow button {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
@@ -223,11 +221,15 @@ button {
   z-index: 2;
 }
 
-button:hover {
+.slideshow button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-button:focus {
+.slideshow button:active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideshow button:focus {
   outline: none;
 }
 
@@ -237,10 +239,189 @@ button:focus {
   font-weight: bold;
   color: black;
   text-align: center;
-  padding: 10%;
+  padding: 20% 5%;
   background: rgba(255, 255, 255, 0.3);
   -webkit-mask-image: url('pain.png');
   mask-image: url('paint2.png');
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
+}
+
+.text-container-courses {
+  padding: 2%;
+  align-content: center;
+}
+
+.text-inside-container-courses {
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
+  padding: 15%;
+  background: rgba(255, 255, 255, 0.3);
+  mask-image: url('paint2.png');
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
+
+.course-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.courses-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.info-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.text-inside-container-info {
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
+  padding: 1%;
+  background: rgba(255, 255, 255, 0.3);
+  mask-image: url('paint2.png');
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  width: 60vw;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.lecturer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+.lecturer-intro {
+  max-width: 400px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.close-navbar {
+  display: none;
+}
+
+.course-detail {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 2;
+  font-family: 'Fauna One', serif 
+}
+
+.course-detail:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.course-detail:active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.course-detail:focus {
+  outline: none;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    left: -10%;
+    width: 120%;
+  }
+
+  .header h1 {
+    margin: 25px 0;
+  }
+
+  .background-palette {
+    display: none;
+  }
+
+  .navbar-img {
+    position: absolute;
+    top: 110px;
+    left: 25%;
+    width: 50%;
+  }
+
+  .navbar {
+    width: 75%;
+    height: 100%;
+  }
+  
+  .navbar a {
+    font-size: 1.8em;
+    display: flex; 
+    align-items: center;
+    padding: 15px 0px;
+    font-weight: bold;
+  }
+  
+  .navbar a:active {
+    background-color: #4C4B16;
+    color: white;
+  }
+
+  .close-navbar {
+    display: block;
+    background-color: transparent;
+    font-size: 3em;
+    color: white;
+    border: none;
+    position: fixed;
+    left: 55%;
+    top: 20px;
+    padding: 10px 25px 15px 20px;
+    border-radius: 50%;
+  }
+
+  .close-navbar:active {
+    background-color: #4C4B16;
+  }
+
+  .content {
+    margin: 0;
+    margin-top: 60%;
+  }
+
+  .slideshow {
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    left: 20px;
+    top: 30px;
+    font-family: 'Cinzel', serif !important;
+  }
+
+  .header button {
+    background-color: transparent;
+    color: white;
+    font-size: 2em;
+    border: none;
+  }
 }

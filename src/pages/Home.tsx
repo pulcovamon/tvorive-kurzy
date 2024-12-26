@@ -6,8 +6,7 @@ const Home = () => {
         <div className="text-container brush-effect">
             <div className="text-inside-container">
                 <p className="welcome-text">
-                "Ahoj! Díky, že jste zavítali na náš web. Tady najdete všechno, co potřebujete vědět o našich produktech a službách. Snažíme se, aby vše bylo co nejjednodušší a nejpříjemnější pro vás. Pokud máte nějaké dotazy nebo chcete vědět víc, stačí nám napsat – rádi vám pomůžeme!"
-                </p>
+                Vítejte v našem ateliéru, kde se rodí umění! U nás najdete inspiraci, pohodu a prostor pro rozvoj vaší kreativity. Nabízíme kurzy kresby, malby, keramiky, akvarelu, ilustrace, kaligrafie a mnoho dalšího. Ať už jste začátečník nebo pokročilý, u nás se budete cítit jako doma. Naši zkušení lektoři vás provedou světem výtvarných technik a pomohou vám objevit váš vlastní umělecký styl. Přijďte se k nám podívat a zažijte radost z tvoření!                </p>
             </div>
         </div>
     </div>

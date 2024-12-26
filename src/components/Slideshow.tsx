@@ -36,7 +36,6 @@ const Slideshow: React.FC = () => {
             <img
                 src={images[currentIndex]}
                 alt="Slideshow"
-                style={{ width: "25vw", height: "auto" }}
             />
       <div className="controls">
         <button onClick={goToPrevSlide}>

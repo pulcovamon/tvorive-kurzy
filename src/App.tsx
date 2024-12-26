@@ -1,35 +1,71 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import 'font-awesome/css/font-awesome.min.css';
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import Courses from "./pages/Courses";
+import Info from "./pages/Info";
 
-// Definice jednotlivých stránek
-
-const Info = () => <div><h2>Info</h2><p>Tato stránka obsahuje informace.</p></div>;
-const Courses = () => <div><h2>Kurzy</h2><p>Seznam nabízených kurzů.</p></div>;
 const Contacts = () => <div><h2>Kontakty</h2><p>Kontaktní údaje.</p></div>;
+
+const AppContent: React.FC = () => {
+  const [navbarVisible, setNavbarVisible] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 1000);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isDesktop) {
+      setNavbarVisible(false);
+    }
+  }, [location.pathname, isDesktop]);
+
+  const displayNavbar = () => {
+    setNavbarVisible(true);
+  };
+
+  const closeNavbar = () => {
+    setNavbarVisible(false);
+  };
+
+  const navbar = navbarVisible || isDesktop ? <Navbar closeNavbar={closeNavbar} /> : null;
+
+  return (
+    <div className="app-container">
+      <img src="background-palette.png" className="background-palette" />
+      <Header displayNavbar={displayNavbar} />
+      {navbar}
+      <img className="navbar-img" src="logo.png" alt="Tvorive kurzy Eva" width={250} />
+
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/info" element={<Info />} />
+          <Route path="/kurzy" element={<Courses />} />
+          <Route path="/kontakty" element={<Contacts />} />
+        </Routes>
+      </div>
+    </div>
+  );
+};
 
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="app-container">
-        <img src="background-palette.webp" className="background-palette"/>
-        <Header />
-        <Navbar />
-        <img className="navbar-img" src="logo.png" alt="Tvorive kurzy Eva" width={250} />
-
-        <div className="content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/info" element={<Info />} />
-            <Route path="/kurzy" element={<Courses />} />
-            <Route path="/kontakty" element={<Contacts />} />
-          </Routes>
-        </div>
-      </div>
+      <AppContent />
     </Router>
   );
 };
