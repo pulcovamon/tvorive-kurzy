@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Fauna+One&family=Cinzel:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fauna One', serif !important;
+  font-size: 1em;
+}
+
+.header {
+  width: 50%;
+  background-color: #4C4B16;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 25%;
+  z-index: 1;
+  height: 7vh;
+  font-family: 'Cinzel', serif !important;
+  font-size: 0.6em;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-family: 'Cinzel', serif;
+}
+
+.header-brush-effect {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  background: linear-gradient(to right, #4C4B16, #898121);
+  mask-image: url('paint3.png');
+  padding: 1%;
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10vh;
+}
+
+.navbar {
+  width: 200px;
+  height: 50vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  background-image: linear-gradient(to bottom, #4C4B16, #898121);
+  background-blend-mode: normal;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+
+  -webkit-mask-image: url('paint2.png');
+  -webkit-mask-size: 300% 300%;
+  -webkit-mask-position: right bottom;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url('paint2.png');
+  mask-size: 300% 300%;
+  mask-position: right bottom;
+  mask-repeat: no-repeat;
+}
+
+
+.navbar ul {
+  list-style-type: none;
+  padding: 30px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: flex; 
+  align-items: center;
+  padding: 15px 0px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #4C4B16;
+  color: white;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+h2 {
+  color: #333;
+}
+
+.navbar-img {
+  position: absolute;
+  bottom: 0;
+}
+
+.background-palette {
+  width: 60vw;
+  position: absolute;
+  right: -750px;
+  top: -5vh;
+  z-index: 5;
+}
+
+.icon {
+  font-size: 2em;
+  width: 2em;
+  text-align: center;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px;
+}
+
+.text-container {
+  flex-grow: 1;
+  padding: 10%;
+  max-width: calc(100% - 25vw);
+  box-sizing: border-box;
+  align-content: center;
+}
+
+.brush-effect {
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 5%;
+  background: linear-gradient(to right, #FA4032, #FA812F);
+  -webkit-mask-image: url('pain.png');
+  mask-image: url('paint2.png');
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
+
+.welcome-text {
+  font-size: 1.5em;
+  word-wrap: break-word;
+  line-height: 1.6;
+}
+
+.slideshow {
+  position: relative;
+  width: 25vw;
+  height: 60vh;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(to right, #FA4032, #FA812F);
+
+  -webkit-mask-image: url('paint2.png');
+  -webkit-mask-size: 200% 200%;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url('paint2.png');
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 10;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 20px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 2;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+button:focus {
+  outline: none;
+}
+
+.text-inside-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  padding: 10%;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-mask-image: url('pain.png');
+  mask-image: url('paint2.png');
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
