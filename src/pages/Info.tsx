@@ -50,6 +50,7 @@ const Info = () => {
     </div>
     });
     return <div className="info-page">
+        <h1>Naši lektoři</h1>
         {lecturersElements}
     </div>
 }
