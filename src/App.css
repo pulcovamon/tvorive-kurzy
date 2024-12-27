@@ -246,7 +246,6 @@ h2 {
   text-align: center;
   padding: 20% 5%;
   background: rgba(255, 255, 255, 0.3);
-  -webkit-mask-image: url('pain.png');
   mask-image: url('paint2.png');
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
