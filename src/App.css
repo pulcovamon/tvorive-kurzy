@@ -377,7 +377,7 @@ h2 {
   }
   
   .navbar a {
-    font-size: 1.8em;
+    font-size: 1.5em;
     display: flex; 
     align-items: center;
     padding: 15px 0px;
@@ -421,6 +421,7 @@ h2 {
     left: 20px;
     top: 30px;
     font-family: 'Cinzel', serif !important;
+    font-size: 2em;
   }
 
   .header button {
