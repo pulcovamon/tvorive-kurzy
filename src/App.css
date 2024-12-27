@@ -371,7 +371,7 @@ h2 {
   }
 
   .navbar {
-    width: 75%;
+    width: 100%;
     height: 100%;
   }
   
@@ -395,7 +395,7 @@ h2 {
     color: white;
     border: none;
     position: fixed;
-    left: 55%;
+    right: 50px;
     top: 20px;
     padding: 10px 25px 15px 20px;
     border-radius: 50%;
@@ -428,4 +428,9 @@ h2 {
     font-size: 2em;
     border: none;
   }
+
+  .text-inside-container {
+    padding: 30% 5%;
+  }
+  
 }
