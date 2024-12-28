@@ -353,6 +353,45 @@ h2 {
   outline: none;
 }
 
+.contacts-page {
+  line-height: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.contacts-page button {
+  font-family: 'Fauna One', serif;
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #898121;
+  color: white;
+  font-size: 1em;
+  margin: 15px;
+}
+
+.contacts-page button:hover {
+  background-color: #4C4B16;
+}
+
+.contacts-page input, .contacts-page textarea {
+  margin: 15px;
+  font-family: 'Fauna One', serif;
+  padding: 5px;
+}
+
+.contacts-page textarea {
+  margin-bottom: 0;
+  height: 150px;
+  width: 350px;
+}
+
+
 @media (max-width: 1000px) {
   .header {
     left: -10%;
@@ -437,7 +476,7 @@ h2 {
 
   .text-inside-container {
     padding: 30% 5%;
-    padding-top: 60%;
+    padding-top: 130px;
   }
 
   .text-inside-container-info {

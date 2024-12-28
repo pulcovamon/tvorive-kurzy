@@ -7,8 +7,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Courses from "./pages/Courses";
 import Info from "./pages/Info";
-
-const Contacts = () => <div><h2>Kontakty</h2><p>Kontaktní údaje.</p></div>;
+import Contacts from "./pages/Contacts";
 
 const AppContent: React.FC = () => {
   const [navbarVisible, setNavbarVisible] = useState(false);
