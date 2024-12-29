@@ -469,6 +469,10 @@ h2 {
     display: none;
   }
 
+  .background-palette2 {
+    display: none;
+  }
+
   .navbar-img {
     position: absolute;
     top: 110px;

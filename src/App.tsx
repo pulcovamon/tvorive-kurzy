@@ -54,7 +54,7 @@ const AppContent: React.FC = () => {
   return (
     <div className="app-container">
       <img
-        src={`${import.meta.env.BASE_URL}/palette1.png`}
+        src={`${import.meta.env.BASE_URL}/palette2.png`}
         className="background-palette"
       />
       <img
