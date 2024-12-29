@@ -437,6 +437,13 @@ h2 {
   text-align: left;
 }
 
+.gallery-page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
 
 @media (max-width: 1000px) {
   .header {

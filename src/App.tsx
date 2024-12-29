@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Info from "./pages/Info";
 import Contacts from "./pages/Contacts";
 import AboutMe from "./pages/AboutMe";
+import Gallery from "./pages/Gallery";
 
 const AppContent: React.FC = () => {
   const [navbarVisible, setNavbarVisible] = useState(false);
@@ -55,7 +56,8 @@ const AppContent: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/info/kurz" element={<Info />} />
           <Route path="/kontakty" element={<Contacts />} />
-          <Route path="/info/o-me" element={<AboutMe />} /> 
+          <Route path="/info/o-me" element={<AboutMe />} />
+          <Route path="/galerie" element={<Gallery />} />
         </Routes>
       </div>
     </div>
