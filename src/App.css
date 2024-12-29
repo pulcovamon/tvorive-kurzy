@@ -334,8 +334,9 @@ h2 {
 }
 
 .lecturer-intro {
-  max-width: 400px;
+  max-width: min(400px, 90vh);
 }
+
 
 .intro-text {
   max-width: 90vh;
