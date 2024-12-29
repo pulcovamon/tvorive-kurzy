@@ -336,6 +336,10 @@ h2 {
   max-width: 400px;
 }
 
+.intro-text {
+  max-width: 90vh;
+}
+
 .hamburger {
   display: none;
 }
