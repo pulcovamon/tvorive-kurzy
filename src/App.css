@@ -411,10 +411,16 @@ h2 {
   padding: 5px;
 }
 
-.contacts-page textarea {
+.message-desktop {
   margin-bottom: 0;
   height: 150px;
   width: 350px;
+}
+
+.message-phone {
+  margin-bottom: 0;
+  height: 250px;
+  width: 250px;
 }
 
 .contact-details {

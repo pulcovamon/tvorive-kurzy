@@ -18,6 +18,7 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
   }
 
   const mapSize = isDesktop ? "350px" : "250px";
+  const messageTextArea = isDesktop ? "message-desktop" : "message-phone";
 
   return (
     <div className="contacts-page">
@@ -68,7 +69,7 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
           <div className="form-group">
             <label htmlFor="message">Zpráva:</label>
             <br />
-            <textarea id="message" name="message" placeholder="Vaše zpráva" />
+            <textarea className={messageTextArea} id="message" name="message" placeholder="Vaše zpráva" />
           </div>
           <button type="submit">Odeslat</button>
         </form>
