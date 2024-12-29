@@ -1,11 +1,4 @@
 const Info = () => {
-  const course = {
-    title: "Kurz kresby ✏️",
-    description: "Kurz kresby pro prijimaci zkousky na SS.",
-    time: "Pondeli 18:00 - 20:00",
-    price: 3000,
-  };
-
   return (
     <div className="info-page">
       <div className="text-container-courses">

@@ -7,10 +7,10 @@ import emailjs from 'emailjs-com';
 
 const Contacts: React.FC = () => {
 
-  function sendEmail(e) {
+  function sendEmail(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-      .then((result) => {
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target as HTMLFormElement, 'YOUR_USER_ID')
+      .then(() => {
           window.location.reload()
       }, (error) => {
           console.log(error.text);
