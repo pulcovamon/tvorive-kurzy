@@ -6,45 +6,34 @@ const Info = () => {
     price: 3000,
   };
 
-  const lecturer = {
-    name: "Anna Kreslířová",
-    nickname: "Anička",
-    intro:
-      "Jsem absolventkou AVU a kresba a malba je můj život. Ráda předávám své zkušenosti a pomáhám studentům objevovat krásu klasických technik.",
-    avatar: "https://i.pravatar.cc/300?img=5",
-  };
-
   return (
     <div className="info-page">
-      <div>
-        <h1>O mě</h1>
-        <div className="text-container-courses brush-effect-info">
-          <div className="text-inside-container-info">
-            <div className="lecturer">
-              <div>
-                <img className="avatar" src={lecturer.avatar} />
-              </div>
-              <div className="lecturer-intro">
-                <b className="course-title">
-                  {lecturer.name} - {lecturer.nickname}
-                </b>{" "}
-                <br />
-                <img src="line.png" height={10} width={"100%"} />
-                <i>{lecturer.intro}</i> <br />
-                <br />
-              </div>
+      <div className="text-container-courses">
+        <div className="text-inside-container-info">
+          <h1><b>Kurz kresby a malby</b></h1>
+            <img src={`${import.meta.env.BASE_URL}/line.png`} height={10} width={"100%"} />
+            <i>
+              Pro ty, co si chteji zkusit neco noveho i jako priprava na talentove zkousky.
+            </i> <br />
+            <br />
+            <div className="brush-effect-info">
+            <b>Cena:</b> 3000 kč za <i>n</i> lekcí <br />
+            <b>Kde:</b> Praha <br />
+            <b>kdy:</b> Každé liché úterý 18:00-20:00 <br />
+            <b>Kapacita:</b> 5-8 studentu <br />
+            <br />
+            <b>Ukazkova hodina zdarma 19. 9. 2024</b>
             </div>
-          </div>
+            <br />
+            <ul className="topics">
+              <li>Zaklady kresby podle predlohy</li>
+              <li>Mereni</li>
+              <li>Stinovani</li>
+              <li>Perspektiva</li>
+              <li>Ruzne techniky kresby a malby</li>
+              <li>Malba v pleneru</li>
+            </ul>
         </div>
-      </div>
-      <div>
-          <h1><b>O kurzu kresby a malby 🖌️✏️</b></h1>
-            <img src="line.png" height={10} width={"100%"} />
-            <i>{course.description}</i> <br />
-            <br />
-            <b>Kdy:</b> {course.time} <br />
-            <b>Za kolik:</b> {course.price} kc <br />
-            <br />
       </div>
     </div>
   );

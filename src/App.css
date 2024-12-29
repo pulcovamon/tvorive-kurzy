@@ -39,6 +39,7 @@ body {
   background: linear-gradient(to right, #4C4B16, #898121);
   mask-image: url('/paint3.png');
   padding: 1%;
+  margin: 0;
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
 }
@@ -54,6 +55,8 @@ body {
 .app-container {
   display: flex;
   flex-direction: row;
+  margin: 0;
+  padding: 0;
   margin-top: 15vh;
 }
 
@@ -174,7 +177,8 @@ h2 {
 .brush-effect-info {
   font-size: 1em;
   text-align: center;
-  padding: 2%;
+  padding: 20px;
+  padding-top: 50px;
   background: linear-gradient(to right, #FA4032, #FA812F);
   mask-image: url('/paint2.png');
   mask-size: 100% 100%;
@@ -297,9 +301,6 @@ h2 {
 }
 
 .info-page {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
   justify-content: center;
   margin-left: 0;
   margin-right: 0;
@@ -310,22 +311,23 @@ h2 {
 .text-inside-container-info {
   font-size: 1.2em;
   color: black;
-  text-align: center;
-  padding: 1%;
-  width: 60vw;
+  padding: 0;
+  max-width: 1000px;
+  line-height: 35px;
 }
 
 .avatar {
   border-radius: 50%;
+  width: 300px ;
 }
 
 .lecturer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  gap: 100px;
   align-items: center;
-  justify-content: space-evenly;
-  margin: 50px;
+  min-width: 90vh;
 }
 
 .lecturer-intro {
@@ -364,6 +366,11 @@ h2 {
   outline: none;
 }
 
+.topics {
+  list-style-type: square;
+  font-style: italic;
+}
+
 .contacts-page {
   line-height: 50px;
   display: flex;
@@ -388,6 +395,7 @@ h2 {
 
 .contacts-page button:hover {
   background-color: #4C4B16;
+  cursor: pointer;
 }
 
 .contacts-page input, .contacts-page textarea {
@@ -400,6 +408,34 @@ h2 {
   margin-bottom: 0;
   height: 150px;
   width: 350px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.social-links a {
+  color: black;
+}
+
+.social-links a:hover {
+  color: #4C4B16;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.contact-form h3 {
+  text-align: left;
+}
+
+.form-group {
+  text-align: left;
 }
 
 

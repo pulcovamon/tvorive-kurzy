@@ -1,4 +1,8 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Contacts: React.FC = () => {
   return (
@@ -9,7 +13,19 @@ const Contacts: React.FC = () => {
       <div className="contact-details">
         <p><strong>Adresa:</strong> Ulice 123, Město, PSČ</p>
         <p><strong>Telefon:</strong> +420 123 456 789</p>
-        <p><strong>Email:</strong> info@tvorivekurzy.cz</p>
+        <p><strong>Email:</strong> tvorive.kurzy.eva@gmail.com</p>
+        <div className="social-links">
+        <h1>
+          <Link to="https://www.facebook.com/profile.php?id=61557493675613" target="_blank">
+          <FontAwesomeIcon icon={faSquareFacebook} />
+          </Link>
+          </h1>
+          <h1>
+          <Link to="mailto:tvorive.kurzy.eva@gmail.com">
+          <FontAwesomeIcon icon={faEnvelope} />
+          </Link>
+          </h1>
+        </div>
       </div>
       
       <div className="contact-map">
@@ -37,6 +53,7 @@ const Contacts: React.FC = () => {
           </div>
           <div className="form-group">
             <label htmlFor="message">Zpráva:</label>
+            <br />
             <textarea id="message" name="message" placeholder="Vaše zpráva" />
           </div>
           <button type="submit">Odeslat</button>

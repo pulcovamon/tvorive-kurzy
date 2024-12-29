@@ -6,7 +6,7 @@ const Header = ({ displayNavbar }: { displayNavbar: Function }) => {
           <i className="fa fa-bars"></i>
         </span>
       </button>
-      <h1>Tvořivé Kurzy Eva 🎨🖌️</h1>
+      <h1>Tvořivé Kurzy Eva</h1>
     </div>
   );
 };

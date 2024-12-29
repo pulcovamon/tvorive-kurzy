@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Info from "./pages/Info";
 import Contacts from "./pages/Contacts";
+import AboutMe from "./pages/AboutMe";
 
 const AppContent: React.FC = () => {
   const [navbarVisible, setNavbarVisible] = useState(false);
@@ -43,17 +44,18 @@ const AppContent: React.FC = () => {
 
   return (
     <div className="app-container">
-      <img src="palette1.png" className="background-palette" />
-      <img src="brush.png" className="background-palette2" />
+      <img src={`${import.meta.env.BASE_URL}/palette1.png`} className="background-palette" />
+      <img src={`${import.meta.env.BASE_URL}/brush.png`} className="background-palette2" />
       <Header displayNavbar={displayNavbar} />
       {navbar}
-      <img className="navbar-img" src="logo.png" alt="Tvorive kurzy Eva" width={250} />
+      <img className="navbar-img" src={`${import.meta.env.BASE_URL}/logo.png`} alt="Tvorive kurzy Eva" width={250} />
 
       <div className="content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/info" element={<Info />} />
+          <Route path="/info/kurz" element={<Info />} />
           <Route path="/kontakty" element={<Contacts />} />
+          <Route path="/info/o-me" element={<AboutMe />} /> 
         </Routes>
       </div>
     </div>
