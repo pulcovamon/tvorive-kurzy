@@ -331,15 +331,19 @@ h2 {
   gap: 100px;
   align-items: center;
   min-width: 90vh;
+  padding: 0;
+  margin: 0;
 }
 
 .lecturer-intro {
+  padding: 0;
+  margin: 0;
   max-width: min(400px, 90vh);
 }
 
 
 .intro-text {
-  max-width: 90vh;
+  max-width: 92vh;
 }
 
 .hamburger {
