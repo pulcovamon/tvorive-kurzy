@@ -424,14 +424,13 @@ h2 {
   color: #4C4B16;
 }
 
-.contact-form {
+.contact-us {
   display: flex;
   flex-direction: column;
-  text-align: right;
 }
 
-.contact-form h3 {
-  text-align: left;
+.contact-form {
+  text-align: right;
 }
 
 .form-group {

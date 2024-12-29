@@ -3,8 +3,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import emailjs from 'emailjs-com';
 
 const Contacts: React.FC = () => {
+
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+      .then((result) => {
+          window.location.reload()
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+
   return (
     <div className="contacts-page">
       <div>
@@ -40,16 +52,16 @@ const Contacts: React.FC = () => {
       </div>
       </div>
 
-      <div className="contact-form">
+      <div className="contact-us">
         <h3>Napište nám</h3>
-        <form>
+        <form className="contact-form" onSubmit={sendEmail}>
           <div className="form-group">
             <label htmlFor="name">Jméno:</label>
-            <input type="text" id="name" name="name" placeholder="Vaše jméno" />
+            <input type="text" id="name" name="user_name" placeholder="Vaše jméno" />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Váš email" />
+            <input type="email" id="email" name="user_email" placeholder="Váš email" />
           </div>
           <div className="form-group">
             <label htmlFor="message">Zpráva:</label>
