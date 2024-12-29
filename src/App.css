@@ -424,6 +424,14 @@ h2 {
   width: 300px;
 }
 
+.form-group .message-phone {
+  text-align: center;
+}
+
+.form-group label {
+  text-align: left;
+}
+
 .contact-details {
   text-align: left;
 }
