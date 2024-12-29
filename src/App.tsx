@@ -44,7 +44,8 @@ const AppContent: React.FC = () => {
 
   return (
     <div className="app-container">
-      <img src="background-palette.png" className="background-palette" />
+      <img src="palette1.png" className="background-palette" />
+      <img src="brush.png" className="background-palette2" />
       <Header displayNavbar={displayNavbar} />
       {navbar}
       <img className="navbar-img" src="logo.png" alt="Tvorive kurzy Eva" width={250} />

@@ -59,7 +59,7 @@ body {
 
 .navbar {
   width: 250px;
-  height: 50vh;
+  height: 600px;
   position: fixed;
   top: 0;
   left: 0;
@@ -127,10 +127,18 @@ h2 {
 }
 
 .background-palette {
-  width: 1000px;
+  width: 500px;
   position: fixed;
-  right: -750px;
-  top: 0;
+  right: -250px;
+  top: 10vh;
+  z-index: 5;
+}
+
+.background-palette2 {
+  width: 250px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
   z-index: 5;
 }
 
@@ -158,6 +166,16 @@ h2 {
   text-align: center;
   padding: 2%;
   background: linear-gradient(to right, #FA4032, #FA812F);
+  mask-image: url('/paint4.png');
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
+
+.brush-effect-info {
+  font-size: 1em;
+  text-align: center;
+  padding: 2%;
+  background: linear-gradient(to right, #FA4032, #FA812F);
   mask-image: url('/paint2.png');
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
@@ -180,7 +198,7 @@ h2 {
   align-items: center;
 
   background: linear-gradient(to right, #FA4032, #FA812F);
-  mask-image: url('/paint2.png');
+  mask-image: url('/paint4.png');
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
 
@@ -239,16 +257,11 @@ h2 {
 
 
 .text-inside-container {
-  background-color: rgba(255, 255, 255, 0.3);
   font-size: 1em;
   font-weight: bold;
   color: black;
   text-align: center;
   padding: 20% 5%;
-  background: rgba(255, 255, 255, 0.3);
-  mask-image: url('/paint2.png');
-  mask-size: 100% 100%;
-  mask-repeat: no-repeat;
 }
 
 .text-container-courses {
@@ -263,7 +276,7 @@ h2 {
   text-align: center;
   padding: 15%;
   background: rgba(255, 255, 255, 0.3);
-  mask-image: url('/paint2.png');
+  mask-image: url('/paint4.png');
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
 }
@@ -292,15 +305,10 @@ h2 {
 }
 
 .text-inside-container-info {
-  background-color: rgba(255, 255, 255, 0.3);
   font-size: 1.2em;
   color: black;
   text-align: center;
   padding: 1%;
-  background: rgba(255, 255, 255, 0.3);
-  mask-image: url('/paint2.png');
-  mask-size: 100% 100%;
-  mask-repeat: no-repeat;
   width: 60vw;
 }
 

@@ -34,7 +34,7 @@ const Info = () => {
         }
     ];
     const lecturersElements = lecturers.map((lecturer) => {
-        return <div className="text-container-courses brush-effect">
+        return <div className="text-container-courses brush-effect-info">
         <div className="text-inside-container-info">
             <div className="lecturer">
                 <div>
