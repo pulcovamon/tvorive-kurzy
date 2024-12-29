@@ -17,7 +17,7 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
       });
   }
 
-  const mapSize = isDesktop ? "350px" : "250px";
+  const mapSize = isDesktop ? "350px" : "300px";
   const messageTextArea = isDesktop ? "message-desktop" : "message-phone";
 
   return (
