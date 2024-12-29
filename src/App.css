@@ -84,6 +84,9 @@ body {
   mask-repeat: no-repeat;
 }
 
+.active {
+  background-color: #4C4B16;
+}
 
 .navbar ul {
   list-style-type: none;
@@ -102,7 +105,6 @@ body {
 
 .navbar a:hover {
   background-color: #4C4B16;
-  color: white;
 }
 
 .navbar a:active {
@@ -377,7 +379,6 @@ h2 {
   flex-direction: row;
   gap: 150px;
   justify-content: space-between;
-  padding-top: 50px;
   margin: 0;
   flex-wrap: wrap;
 }
@@ -410,6 +411,10 @@ h2 {
   width: 350px;
 }
 
+.contact-details {
+  text-align: left;
+}
+
 .social-links {
   display: flex;
   flex-direction: row;
@@ -431,6 +436,10 @@ h2 {
 
 .contact-form {
   text-align: right;
+}
+
+.contacts {
+  text-align: center;
 }
 
 .form-group {

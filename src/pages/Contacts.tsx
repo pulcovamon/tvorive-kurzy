@@ -19,9 +19,9 @@ const Contacts: React.FC = () => {
 
   return (
     <div className="contacts-page">
-      <div>
+      <div className="contacts">
       <h2>Kontakty</h2>
-
+      <img src={`${import.meta.env.BASE_URL}/line.png`} height={10} width={"100%"} />
       <div className="contact-details">
         <p><strong>Adresa:</strong> Ulice 123, Město, PSČ</p>
         <p><strong>Telefon:</strong> +420 123 456 789</p>
@@ -39,7 +39,7 @@ const Contacts: React.FC = () => {
           </h1>
         </div>
       </div>
-      
+      <img src={`${import.meta.env.BASE_URL}/line.png`} height={10} width={"100%"} />
       <div className="contact-map">
         <iframe
           title="Mapa"

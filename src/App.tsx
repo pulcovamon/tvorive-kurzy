@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import "./App.css";
-import 'font-awesome/css/font-awesome.min.css';
+import "font-awesome/css/font-awesome.min.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -41,15 +46,29 @@ const AppContent: React.FC = () => {
     setNavbarVisible(false);
   };
 
-  const navbar = navbarVisible || isDesktop ? <Navbar closeNavbar={closeNavbar} /> : null;
+  const navbar =
+    navbarVisible || isDesktop ? (
+      <Navbar closeNavbar={closeNavbar} location={location.pathname} />
+    ) : null;
 
   return (
     <div className="app-container">
-      <img src={`${import.meta.env.BASE_URL}/palette1.png`} className="background-palette" />
-      <img src={`${import.meta.env.BASE_URL}/brush.png`} className="background-palette2" />
+      <img
+        src={`${import.meta.env.BASE_URL}/palette1.png`}
+        className="background-palette"
+      />
+      <img
+        src={`${import.meta.env.BASE_URL}/brush.png`}
+        className="background-palette2"
+      />
       <Header displayNavbar={displayNavbar} />
       {navbar}
-      <img className="navbar-img" src={`${import.meta.env.BASE_URL}/logo.png`} alt="Tvorive kurzy Eva" width={250} />
+      <img
+        className="navbar-img"
+        src={`${import.meta.env.BASE_URL}/logo.png`}
+        alt="Tvorive kurzy Eva"
+        width={250}
+      />
 
       <div className="content">
         <Routes>
