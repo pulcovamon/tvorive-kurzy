@@ -5,7 +5,6 @@ import 'font-awesome/css/font-awesome.min.css';
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Home from "./pages/Home";
-import Courses from "./pages/Courses";
 import Info from "./pages/Info";
 import Contacts from "./pages/Contacts";
 
@@ -54,7 +53,6 @@ const AppContent: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/info" element={<Info />} />
-          <Route path="/kurzy" element={<Courses />} />
           <Route path="/kontakty" element={<Contacts />} />
         </Routes>
       </div>
