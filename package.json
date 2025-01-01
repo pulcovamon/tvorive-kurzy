@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://pulcovamon.github.io/tvorive-kurzy",
+  "homepage": "https://tvorive-kurzy-753363272671.europe-west1.run.app",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
