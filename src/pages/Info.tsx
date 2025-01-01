@@ -4,7 +4,7 @@ const Info = () => {
       <div className="text-container-courses">
         <div className="text-inside-container-info">
           <h1><b>Kurz kresby a malby</b></h1>
-            <img src={`${import.meta.env.BASE_URL}/line.png`} height={10} width={"100%"} />
+            <img src="line.png" height={10} width={"100%"} />
             <i>
               Pro ty, co si chteji zkusit neco noveho i jako priprava na talentove zkousky.
             </i> <br />

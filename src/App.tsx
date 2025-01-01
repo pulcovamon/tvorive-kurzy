@@ -54,18 +54,18 @@ const AppContent: React.FC = () => {
   return (
     <div className="app-container">
       <img
-        src={`${import.meta.env.BASE_URL}/palette2.png`}
+        src="palette2.png"
         className="background-palette"
       />
       <img
-        src={`${import.meta.env.BASE_URL}/brush.png`}
+        src="brush.png"
         className="background-palette2"
       />
       <Header displayNavbar={displayNavbar} />
       {navbar}
       <img
         className="navbar-img"
-        src={"logo.png"}
+        src="logo.png"
         alt="Tvorive kurzy Eva"
         width={250}
       />
