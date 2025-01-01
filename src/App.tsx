@@ -65,7 +65,7 @@ const AppContent: React.FC = () => {
       {navbar}
       <img
         className="navbar-img"
-        src={`${import.meta.env.BASE_URL}/logo.png`}
+        src={"logo.png"}
         alt="Tvorive kurzy Eva"
         width={250}
       />
