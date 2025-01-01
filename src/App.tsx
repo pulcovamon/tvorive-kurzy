@@ -73,9 +73,9 @@ const AppContent: React.FC = () => {
       <div className="content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/info/kurz" element={<Info />} />
+          <Route path="/info" element={<Info />} />
           <Route path="/kontakty" element={<Contacts isDesktop={isDesktop} />} />
-          <Route path="/info/o-me" element={<AboutMe />} />
+          <Route path="/o-me" element={<AboutMe />} />
           <Route path="/galerie" element={<Gallery />} />
         </Routes>
       </div>
