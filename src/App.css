@@ -209,6 +209,10 @@ body {
   align-items: center;
 }
 
+.logo-img {
+  width: min(90vw, 400px);
+}
+
 .text-container {
   flex-grow: 1;
   max-width: 800px;
@@ -451,6 +455,14 @@ body {
 .contacts-page button:hover {
   background-color: #4c4b16;
   cursor: pointer;
+}
+
+.contacts-page li {
+  list-style: square;
+}
+
+.how-to-get-here {
+  max-width: 600px;
 }
 
 .contacts-page input,

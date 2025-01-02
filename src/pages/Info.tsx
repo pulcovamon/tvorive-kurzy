@@ -1,9 +1,15 @@
+import { faPalette } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Info = () => {
   return (
     <div className="info-page">
       <div className="text-container-courses">
         <div className="text-inside-container-info">
-          <h1><b>Kurz kresby a malby</b></h1>
+          <h1>
+            <b>Kurz kresby a malby</b>{" "}
+            <FontAwesomeIcon icon={faPalette} />
+          </h1>
             <img src="line.png" height={10} width={"100%"} />
             <i>
               Pro ty, co si chteji zkusit neco noveho i jako priprava na talentove zkousky.

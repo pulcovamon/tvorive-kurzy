@@ -3,7 +3,13 @@ import Slideshow from "../components/Slideshow";
 const Home = ({ images }: { images: string[] }) => {
   return (
     <div className="home-page">
-      <Slideshow images={images} />
+            <div>
+              <img
+                className="logo-img"
+                src="logo.png"
+                alt="Tvorive kurzy Eva"
+              />
+            </div>
       <div className="text-container">
         <p className="welcome-text">
           Vítejte v ateliéru, kde se naučíte kreslit, malovat a rozvíjet své

@@ -5,10 +5,13 @@ import {
   faSquareInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import {
+  faBus,
+  faCar,
   faEnvelope,
   faLocationDot,
   faPhone,
   faUser,
+  faWalking,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 //import emailjs from "emailjs-com";
@@ -40,19 +43,12 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
 
   return (
     <div className="contacts-page">
-      <div>
-      <img
-        className="logo-img"
-        src="logo.png"
-        alt="Tvorive kurzy Eva"
-        width={250}
-      />
-      </div>
+
       <div className="contacts">
         <div className="contact-details">
-        <p>
-            <FontAwesomeIcon className="contact-icon" icon={faUser} />{" "}
-            Eva Pulcová
+          <p>
+            <FontAwesomeIcon className="contact-icon" icon={faUser} /> Eva
+            Pulcová
           </p>
           <p>
             <Link
@@ -64,9 +60,9 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
             </Link>
           </p>
           <p>
-          <Link to="tel:+420123456789">
-              <FontAwesomeIcon className="contact-icon" icon={faPhone} /> +420 123
-              456 789
+            <Link to="tel:+420123456789">
+              <FontAwesomeIcon className="contact-icon" icon={faPhone} />{" "}
+              +420 123 456 789
             </Link>
           </p>
           <p>
@@ -75,33 +71,66 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
               {` ${emailAddress}`}
             </Link>
           </p>
-          <img src="line.png" height={10} width={"100%"} />
-          <div className="social-links">
-            <h1>
-              <Link
+          <p>
+          <Link
                 to="https://www.facebook.com/profile.php?id=61557493675613"
                 target="_blank"
               >
-                <FontAwesomeIcon icon={faSquareFacebook} />
+                <FontAwesomeIcon icon={faSquareFacebook} className="contact-icon"  />{" "}
+                Tvořivé kurzy Eva
               </Link>
-            </h1>
-            <h1>
-              <Link to="#">
-                <FontAwesomeIcon icon={faSquareInstagram} />
-              </Link>
-            </h1>
-          </div>
+          </p>
         </div>
-        </div>
-        <div className="contact-map">
-          <iframe
-            title="Mapa"
-            width={mapSize}
-            height={mapSize}
-            style={{ border: 0 }}
-            loading="lazy"
-            src="https://maps.google.com/maps?width=350&amp;height=350&amp;hl=en&amp;q=kutilova&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-          ></iframe>
+      </div>
+      
+      <div className="contact-map">
+        <iframe
+          title="Mapa"
+          width={mapSize}
+          height={mapSize}
+          style={{ border: 0 }}
+          loading="lazy"
+          src="https://maps.google.com/maps?width=350&amp;height=350&amp;hl=en&amp;q=kutilova&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe>
+      </div>
+      <div className="how-to-get-here">
+        <h2>
+          Jak se k nám dostanete{" "}
+          <FontAwesomeIcon icon={faWalking} />
+          </h2>
+        <img src="line.png" height="10" width="100%" alt="oddělovač" />
+
+        <p>
+          <b>
+            <FontAwesomeIcon icon={faBus} />{" "}
+            MHD:
+          </b>
+        </p>
+        <ul>
+          <li>
+            <b>Zastávka Labe:</b> Autobusy 117, 139, 150, 157. Odtud pokračujte
+            kolem supermarketu Billa a dále do ulice Kutilova.
+          </li>
+          <li>
+            <b>Zastávka Družná:</b> Autobusy 117, 190, 139, 150, 157. Projděte
+            průchodem mezi paneláky do ulice Milerova, pokračujte vlevo do ulice
+            Krouzova a dalším průchodem mezi paneláky vpravo do ulice Kutilova.
+          </li>
+        </ul>
+
+        <p>
+        <b>
+            <FontAwesomeIcon icon={faCar} />{" "}
+            Autem:
+          </b>
+        </p>
+        <ul>
+          <li>Parkovat můžete v okolních ulicích, ale bývají často plné.</li>
+          <li>
+            Alternativně lze zaparkovat v garážích Kauflandu, kde je obvykle
+            parkování zdarma na 2 hodiny.
+          </li>
+        </ul>
       </div>
 
       {/* <div className="contact-us">

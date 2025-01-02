@@ -1,3 +1,6 @@
+import { faHandPointLeft } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const AboutMe = () => {
   return (
       <div className="info-page">
@@ -5,7 +8,10 @@ const AboutMe = () => {
               <div className="lecturer">
                   <img className="avatar" src="avatar.jpg" alt="Profilová fotografie" />
                   <div className="lecturer-intro">
-                      <h1 className="course-title">O mně</h1>
+                      <h1 className="course-title">
+                        O mně{" "}
+                        <FontAwesomeIcon icon={faHandPointLeft} />
+                      </h1>
                       <img src="line.png" alt="Oddělovač" height={10} width="100%" />
                       <p className="intro-text">
                           Ahoj, jmenuji se Eva. Jsem ilustrátorka knih pro děti s desetiletou praxí ve výuce kresby,
