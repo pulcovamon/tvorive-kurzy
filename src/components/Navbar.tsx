@@ -7,7 +7,9 @@ const Navbar = ({
   closeNavbar: Function;
   location: string;
 }) => (
+  <div className="navbar-shadow">
   <nav className="navbar">
+    <div className="navbar-shadow">
     <ul className="navbar-list">
       <NavbarItem location={location} to="/" iconClass="fa fa-home" label="Domů" />
       <NavbarItem location={location} to="/o-me" iconClass="fa fa-user" label="O mě" />
@@ -19,7 +21,9 @@ const Navbar = ({
       <i className="fa fa-angle-left"></i>
       <i className="fa fa-angle-left"></i>
     </button>
+    </div>
   </nav>
+  </div>
 );
 
 export default Navbar;

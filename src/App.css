@@ -13,7 +13,6 @@ body {
 
 .header {
   width: 50%;
-  background-color: #4C4B16;
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -24,6 +23,7 @@ body {
   height: 100px;
   font-family: 'Cinzel', serif !important;
   font-size: 0.6em;
+  filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.5)); 
 }
 
 .header h1 {
@@ -73,7 +73,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: #A2BF47; /* Světlejší zelená, ladící s gradientem */
+  background: #A2BF47;
   transition: width 0.3s ease-in-out;
 }
 
@@ -82,7 +82,7 @@ body {
 }
 
 .footer a:hover {
-  color: #A2BF47; /* Světlejší zelená */
+  color: #A2BF47;
 }
 
 .footer-links {
@@ -145,6 +145,10 @@ body {
   mask-size: 300% 300%;
   mask-position: right bottom;
   mask-repeat: no-repeat;
+}
+
+.navbar-shadow {
+  filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.5)); 
 }
 
 .active {
