@@ -8,6 +8,7 @@ import {
   faEnvelope,
   faLocationDot,
   faPhone,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 //import emailjs from "emailjs-com";
@@ -39,8 +40,20 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
 
   return (
     <div className="contacts-page">
+      <div>
+      <img
+        className="logo-img"
+        src="logo.png"
+        alt="Tvorive kurzy Eva"
+        width={250}
+      />
+      </div>
       <div className="contacts">
         <div className="contact-details">
+        <p>
+            <FontAwesomeIcon className="contact-icon" icon={faUser} />{" "}
+            Eva Pulcová
+          </p>
           <p>
             <Link
               to="https://www.google.com/maps/place/Kutilova,+143+00+Praha+12/@50.012754,14.4187667,17z/data=!3m1!4b1!4m6!3m5!1s0x470b914ca83cd5b5:0x51b714f5f6e41a7!8m2!3d50.012754!4d14.4213416!16s%2Fg%2F1tl_kf5z?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"

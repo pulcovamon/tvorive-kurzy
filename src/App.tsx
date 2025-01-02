@@ -77,18 +77,9 @@ const AppContent: React.FC = () => {
         src="palette2.png"
         className="background-palette"
       />
-      <img
-        src="brushes.png"
-        className="background-palette2"
-      />
+
       <Header displayNavbar={displayNavbar} />
       {navbar}
-      <img
-        className="navbar-img"
-        src="logo.png"
-        alt="Tvorive kurzy Eva"
-        width={250}
-      />
 
       <div className="wrapper">
       <div className="content">
