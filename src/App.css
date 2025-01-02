@@ -296,14 +296,6 @@ body {
   padding: 20px;
 }
 
-.left-button {
-  padding-left: 50px;
-}
-
-.right-button {
-  padding-right: 30px;
-}
-
 .slideshow button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
