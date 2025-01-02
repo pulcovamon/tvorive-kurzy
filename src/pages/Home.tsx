@@ -1,8 +1,8 @@
 import Slideshow from "../components/Slideshow";
 
-const Home = () => {
+const Home = ({ images }: { images: string[] }) => {
     return <div className="home-page page">
-        <Slideshow />
+        <Slideshow images={images} />
         <div className="text-container">
             <div className="text-inside-container">
                 <p className="welcome-text">

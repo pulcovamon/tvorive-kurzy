@@ -1,24 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDrag } from "@use-gesture/react";
 
-const images = [
-  "469081208_122168847446249789_5586547136073549947_n.jpg",
-  "469087949_122168847656249789_1229563101964536289_n.jpg",
-  "469089958_122169044972249789_4051613390176550732_n.jpg",
-  "469121031_122168847392249789_228136787837621275_n.jpg",
-  "469124228_122168847416249789_529083761992409823_n.jpg",
-  "469130843_122168847410249789_6458794863008195022_n.jpg",
-  "469163912_122168847398249789_565327365816039447_n.jpg",
-  "469176748_122168847386249789_6166407068095635099_n.jpg",
-  "469180886_122168847374249789_6529274338169913467_n.jpg",
-  "469181741_122168847578249789_1928072034286469386_n.jpg",
-  "469182960_122169044864249789_1392439034712960945_n.jpg",
-  "469208140_122168847464249789_5005832497987227905_n.jpg",
-  "469222243_122168847404249789_7256726528005602055_n.jpg",
-  "469284172_122168847440249789_3063773670360851138_n.jpg",
-];
-
-const Slideshow: React.FC = () => {
+const Slideshow = ({ images }: { images: string[] }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [imageHover, setImageHover] = useState(false);
 
@@ -76,7 +59,12 @@ const Slideshow: React.FC = () => {
         }}
       >
         {images.map((src, index) => (
-          <img key={index} src={`slideshow/${src}`} alt={`Slide ${index}`} draggable="false" />
+          <img
+            key={index}
+            src={`slideshow/${src}`}
+            alt={`Slide ${index}`}
+            draggable="false"
+          />
         ))}
       </div>
       {imageHover ? buttons : null}
