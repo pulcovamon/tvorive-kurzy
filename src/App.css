@@ -628,11 +628,13 @@ body {
   }
 
   .background-palette {
-    display: none;
+    opacity: 0.3;
+    top: 0;
   }
 
   .background-palette2 {
-    display: none;
+    opacity: 0.3;
+    bottom: -100px;
   }
 
   .navbar-img {
