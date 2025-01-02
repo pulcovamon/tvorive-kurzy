@@ -238,10 +238,11 @@ body {
 }
 
 .welcome-text {
-  font-size: 1.6em;
+  font-size: 1.4em;
   word-wrap: break-word;
   line-height: 2;
   text-align: left;
+  max-width: min(90vw, 600px);
 }
 
 .slideshow {
