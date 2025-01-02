@@ -2,7 +2,7 @@ const AboutMe = () => {
     return <div className="info-page">
         <div className="text-inside-container-info">
           <div className="lecturer">
-            <div className="brush-effect">
+            <div className="">
               <img className="avatar" src="avatar.jpg" />
             </div>
             <div className="lecturer-intro">
