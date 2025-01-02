@@ -21,7 +21,7 @@ const Footer = ({ emailAddress }: { emailAddress: string }) => {
           </Link>
         </h1>
         <h1>
-            <Link to="#" >
+            <Link to="https://github.com/pulcovamon/tvorive-kurzy" >
             <FontAwesomeIcon icon={faGithub} />
             </Link>
         </h1>
