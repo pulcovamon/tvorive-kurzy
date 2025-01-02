@@ -55,7 +55,6 @@ body {
 .footer {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 0;
-  z-index: -2;
 }
 
 .footer a {
@@ -434,6 +433,7 @@ body {
   margin: 0;
   margin-top: 40px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .contacts-page button {
@@ -487,6 +487,22 @@ body {
 .contact-details a {
   color: black;
   text-decoration: none;
+  position: relative;
+}
+
+.contact-details a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #4c4b16;
+  transition: width 0.3s ease-in-out;
+}
+
+.contact-details a:hover::before {
+  width: 100%;
 }
 
 .contact-details a:hover {
@@ -506,11 +522,29 @@ body {
 
 .social-links a {
   color: black;
+  text-decoration: none;
+  position: relative; /* Pro pseudo-element */
+}
+
+.social-links a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #4c4b16; /* Barva podtržení */
+  transition: width 0.3s ease-in-out;
+}
+
+.social-links a:hover::before {
+  width: 100%; /* Podtržení se zobrazí */
 }
 
 .social-links a:hover {
-  color: #4c4b16;
+  color: #4c4b16; /* Změna barvy textu při hoveru */
 }
+
 
 .contact-us {
   display: flex;
@@ -546,7 +580,6 @@ body {
 .image-preview {
   width: 250px;
   height: 250px;
-  border: 2px solid #4c4b16;
   overflow: hidden;
   position: relative;
   cursor: pointer;
