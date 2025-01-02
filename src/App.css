@@ -178,7 +178,7 @@ body {
 .navbar-img {
   position: fixed;
   bottom: 0;
-  z-index: 5;
+  z-index: -1;
 }
 
 .background-palette {
@@ -335,6 +335,7 @@ body {
 .courses-description {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 25px;
 }
 
@@ -373,9 +374,9 @@ body {
   flex-direction: row;
   gap: 100px;
   align-items: center;
-  min-width: 90vh;
   padding: 0;
   margin: 0;
+  justify-content: center;
 }
 
 .lecturer-intro {
@@ -429,8 +430,8 @@ body {
   line-height: 50px;
   display: flex;
   flex-direction: row;
-  gap: 150px;
-  justify-content: space-between;
+  gap: 50px;
+  justify-content: center;
   margin: 0;
   flex-wrap: wrap;
 }
@@ -711,6 +712,10 @@ body {
   .footer {
     width: 150vw;
     mask-size: 150% 250%;
+  }
+
+  .content {
+    margin-top: 450px;
   }
   
 }
