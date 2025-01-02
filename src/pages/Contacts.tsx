@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSquareFacebook,
@@ -10,30 +10,30 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import emailjs from "emailjs-com";
+//import emailjs from "emailjs-com";
 
 const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
-  function sendEmail(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        e.target as HTMLFormElement,
-        "YOUR_USER_ID"
-      )
-      .then(
-        () => {
-          window.location.reload();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  }
+  // function sendEmail(e: React.FormEvent<HTMLFormElement>) {
+  //   e.preventDefault();
+  //   emailjs
+  //     .sendForm(
+  //       "YOUR_SERVICE_ID",
+  //       "YOUR_TEMPLATE_ID",
+  //       e.target as HTMLFormElement,
+  //       "YOUR_USER_ID"
+  //     )
+  //     .then(
+  //       () => {
+  //         window.location.reload();
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // }
 
   const mapSize = isDesktop ? "350px" : "300px";
-  const messageTextArea = isDesktop ? "message-desktop" : "message-phone";
+  //const messageTextArea = isDesktop ? "message-desktop" : "message-phone";
 
   const emailAddress = "tvorive.kurzy.eva@gmail.com";
 
@@ -51,8 +51,10 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
             </Link>
           </p>
           <p>
-            <FontAwesomeIcon className="contact-icon" icon={faPhone} /> +420 123
-            456 789
+          <Link to="tel:+420123456789">
+              <FontAwesomeIcon className="contact-icon" icon={faPhone} /> +420 123
+              456 789
+            </Link>
           </p>
           <p>
             <Link to={`mailto:${emailAddress}`}>
