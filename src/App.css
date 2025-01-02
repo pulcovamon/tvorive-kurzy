@@ -700,7 +700,8 @@ body {
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
+    gap: 50px;
     padding-left: 50px;
     padding-right: 50px;
   }
