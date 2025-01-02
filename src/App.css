@@ -129,7 +129,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 2;
 
   background-image: linear-gradient(to bottom, #4C4B16, #898121);
   background-blend-mode: normal;
