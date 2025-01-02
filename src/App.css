@@ -715,7 +715,7 @@ body {
   }
 
   .content {
-    margin-top: 60vh;
+    margin-top: calc(60vw + 10vh);
   }
   
 }
