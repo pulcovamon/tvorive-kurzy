@@ -9,6 +9,10 @@
 body {
   font-family: 'Fauna One', serif !important;
   font-size: 1em;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("background3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .header {
@@ -17,7 +21,7 @@ body {
   padding: 20px 0;
   text-align: center;
   position: fixed;
-  top: 0;
+  top: -10px;
   left: 25%;
   z-index: 1;
   height: 100px;
@@ -95,11 +99,6 @@ body {
   padding-bottom: 25px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .app-container {
   margin: 0;
   padding: 0;
@@ -120,6 +119,11 @@ body {
   margin-left: 250px;
   margin-right: 250px;
   margin-top: 10vh;
+}
+
+.page-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
 }
 
 .navbar {
@@ -215,12 +219,16 @@ body {
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
+  margin: 10px;
+  padding: 10px;
 }
 
 .text-container {
   flex-grow: 1;
   max-width: 800px;
   align-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .brush-effect {
@@ -250,21 +258,20 @@ body {
   line-height: 2;
   text-align: left;
   max-width: min(90vw, 600px);
+  margin: 0;
+  padding: 0;
 }
 
 .slideshow {
-  position: relative;
   width: 400px;
-  height: 700px;
-  margin: 0 auto;
+  height: 500px;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  color: white;
-  text-align: center;
-  font-weight: bold;
+  position: relative;
 }
 
 .slideshow-track {
@@ -620,6 +627,7 @@ body {
   .header {
     left: 0;
     width: 100%;
+    top: -20px;
   }
 
   .header h1 {
@@ -737,7 +745,7 @@ body {
   }
 
   .content {
-    margin-top: calc(60vw + 10vh);
+    margin-top: calc(70vw + 10vh);
   }
   
 }

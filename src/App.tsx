@@ -78,7 +78,7 @@ const AppContent: React.FC = () => {
         className="background-palette"
       />
       <img
-        src="brush.png"
+        src="brushes.png"
         className="background-palette2"
       />
       <Header displayNavbar={displayNavbar} />
@@ -92,6 +92,7 @@ const AppContent: React.FC = () => {
 
       <div className="wrapper">
       <div className="content">
+        <div className="page-container">
         <Routes>
           <Route path="/" element={<Home images={images} />} />
           <Route path="/info" element={<Info />} />
@@ -99,6 +100,7 @@ const AppContent: React.FC = () => {
           <Route path="/o-me" element={<AboutMe />} />
           <Route path="/galerie" element={<Gallery images={images} />} />
         </Routes>
+        </div>
       </div>
 
       <Footer emailAddress={emailAddress} />
