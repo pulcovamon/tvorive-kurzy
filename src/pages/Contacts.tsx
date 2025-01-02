@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faSquareFacebook, faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import emailjs from "emailjs-com";
 
@@ -28,25 +28,29 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
   const mapSize = isDesktop ? "350px" : "300px";
   const messageTextArea = isDesktop ? "message-desktop" : "message-phone";
 
+  const emailAddress = "tvorive.kurzy.eva@gmail.com";
+
   return (
     <div className="contacts-page">
       <div className="contacts">
-        <h2>Kontakty</h2>
-        <img
+        <div className="contact-details">
+          <p>
+            <FontAwesomeIcon className="contact-icon" icon={faLocationDot} /> Ulice 123, Město, PSČ
+          </p>
+          <p>
+            <FontAwesomeIcon className="contact-icon"  icon={faPhone} /> +420 123 456 789
+          </p>
+          <p>
+            <Link to={`mailto:${emailAddress}`}>
+            <FontAwesomeIcon className="contact-icon"  icon={faEnvelope} />
+            {` ${emailAddress}`}
+            </Link>
+          </p>
+          <img
           src="line.png"
           height={10}
           width={"100%"}
         />
-        <div className="contact-details">
-          <p>
-            <strong>Adresa:</strong> Ulice 123, Město, PSČ
-          </p>
-          <p>
-            <strong>Telefon:</strong> +420 123 456 789
-          </p>
-          <p>
-            <strong>Email:</strong> tvorive.kurzy.eva@gmail.com
-          </p>
           <div className="social-links">
             <h1>
               <Link
@@ -57,13 +61,13 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
               </Link>
             </h1>
             <h1>
-              <Link to="mailto:tvorive.kurzy.eva@gmail.com">
-                <FontAwesomeIcon icon={faEnvelope} />
+              <Link to="#">
+                <FontAwesomeIcon icon={faSquareInstagram} />
               </Link>
             </h1>
           </div>
         </div>
-        <img src="line.png" height={10} width={"100%"} />
+        <br />
         <div className="contact-map">
           <iframe
             title="Mapa"
