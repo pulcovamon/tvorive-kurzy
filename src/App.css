@@ -710,12 +710,12 @@ body {
   }
 
   .footer {
-    width: 150vw;
+    width: 100vw;
     mask-size: 150% 250%;
   }
 
   .content {
-    margin-top: 450px;
+    margin-top: 60vh;
   }
   
 }
