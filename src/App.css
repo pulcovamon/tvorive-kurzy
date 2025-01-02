@@ -434,6 +434,7 @@ body {
   gap: 50px;
   justify-content: center;
   margin: 0;
+  margin-top: 40px;
   flex-wrap: wrap;
 }
 
