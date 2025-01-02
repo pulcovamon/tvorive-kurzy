@@ -1,7 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareFacebook, faSquareInstagram } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSquareFacebook,
+  faSquareInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faEnvelope,
+  faLocationDot,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import emailjs from "emailjs-com";
 
@@ -35,22 +42,25 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
       <div className="contacts">
         <div className="contact-details">
           <p>
-            <FontAwesomeIcon className="contact-icon" icon={faLocationDot} /> Ulice 123, Město, PSČ
+            <Link
+              to="https://www.google.com/maps/place/Kutilova,+143+00+Praha+12/@50.012754,14.4187667,17z/data=!3m1!4b1!4m6!3m5!1s0x470b914ca83cd5b5:0x51b714f5f6e41a7!8m2!3d50.012754!4d14.4213416!16s%2Fg%2F1tl_kf5z?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+            >
+              <FontAwesomeIcon className="contact-icon" icon={faLocationDot} />{" "}
+              Kutilova xyz, Praha 12 - Modřany, 143 00
+            </Link>
           </p>
           <p>
-            <FontAwesomeIcon className="contact-icon"  icon={faPhone} /> +420 123 456 789
+            <FontAwesomeIcon className="contact-icon" icon={faPhone} /> +420 123
+            456 789
           </p>
           <p>
             <Link to={`mailto:${emailAddress}`}>
-            <FontAwesomeIcon className="contact-icon"  icon={faEnvelope} />
-            {` ${emailAddress}`}
+              <FontAwesomeIcon className="contact-icon" icon={faEnvelope} />
+              {` ${emailAddress}`}
             </Link>
           </p>
-          <img
-          src="line.png"
-          height={10}
-          width={"100%"}
-        />
+          <img src="line.png" height={10} width={"100%"} />
           <div className="social-links">
             <h1>
               <Link
@@ -67,20 +77,19 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
             </h1>
           </div>
         </div>
-        <br />
+        </div>
         <div className="contact-map">
           <iframe
             title="Mapa"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.9924620231546!2d14.420460315290437!3d50.087572779424095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDDsDA1JzE1LjIiTiAxNMKwMjUnMDAuMSJF!5e0!3m2!1scs!2scz!4v1698313127609!5m2!1scs!2scz"
             width={mapSize}
             height={mapSize}
             style={{ border: 0 }}
             loading="lazy"
-          />
-        </div>
+            src="https://maps.google.com/maps?width=350&amp;height=350&amp;hl=en&amp;q=kutilova&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
       </div>
 
-      <div className="contact-us">
+      {/* <div className="contact-us">
         <h3>Napište nám</h3>
         <form className="contact-form" onSubmit={sendEmail}>
           <div className="form-group">
@@ -113,7 +122,7 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
           </div>
           <button type="submit">Odeslat</button>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 };
