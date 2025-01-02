@@ -1,17 +1,27 @@
 import Slideshow from "../components/Slideshow";
 
 const Home = ({ images }: { images: string[] }) => {
-    return <div className="home-page page">
-        <Slideshow images={images} />
-        <div className="text-container">
-            <div className="text-inside-container">
-                <p className="welcome-text">
-                Vítejte v našem ateliéru, kde se rodí umění! U nás najdete inspiraci, pohodu a prostor pro rozvoj vaší kreativity. Nabízíme kurzy kresby, malby, keramiky, akvarelu, ilustrace, kaligrafie a mnoho dalšího. Ať už jste začátečník nebo pokročilý, u nás se budete cítit jako doma. Naši zkušení lektoři vás provedou světem výtvarných technik a pomohou vám objevit váš vlastní umělecký styl. Přijďte se k nám podívat a zažijte radost z tvoření!
-                </p>
-            </div>
-        </div>
+  return (
+    <div className="home-page">
+      <Slideshow images={images} />
+      <div className="text-container">
+        <p className="welcome-text">
+          Vítejte v ateliéru, kde se naučíte kreslit, malovat a rozvíjet své
+          výtvarné dovednosti. Nabízím kurzy kresby, malby pro všechny úrovně 
+          – od začátečníků po pokročilé.
+          <br />
+          <br />
+          Pod vedením zkušené lektorky Evy získáte praktické znalosti, osvojíte
+          si nové techniky a objevíte svůj vlastní umělecký styl. Každá lekce je
+          přizpůsobena vašim potřebám a tempu.
+          <br />
+          <br />
+          Přijďte zažít radost z učení i tvoření a vytvořit něco jedinečného.
+          Těšíme se na vás!
+        </p>
+      </div>
     </div>
-}
-
+  );
+};
 
 export default Home;

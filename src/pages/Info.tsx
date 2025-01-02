@@ -9,14 +9,17 @@ const Info = () => {
               Pro ty, co si chteji zkusit neco noveho i jako priprava na talentove zkousky.
             </i> <br />
             <br />
-            <div className="brush-effect-info">
-            <b>Cena:</b> 3000 kč za <i>n</i> lekcí <br />
+            <div className="courses-description">
+              <div>
+              <b>Cena:</b> 3000 kč za <i>n</i> lekcí <br />
             <b>Kde:</b> Praha <br />
             <b>kdy:</b> Každé liché úterý 18:00-20:00 <br />
             <b>Kapacita:</b> 5-8 studentu <br />
             <br />
             <b>Ukazkova hodina zdarma 19. 9. 2024</b>
-            </div>
+              </div>
+
+            
             <br />
             <ul className="topics">
               <li>Zaklady kresby podle predlohy</li>
@@ -26,6 +29,7 @@ const Info = () => {
               <li>Ruzne techniky kresby a malby</li>
               <li>Malba v pleneru</li>
             </ul>
+            </div>
         </div>
       </div>
     </div>

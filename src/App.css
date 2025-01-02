@@ -99,10 +99,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
-  padding: 20px;
+  padding: 10px;
   margin-left: 250px;
   margin-right: 250px;
-  margin-top: 15vh;
+  margin-top: 10vh;
   position: relative;
 }
 
@@ -156,10 +156,6 @@ body {
 .navbar a:active {
   background-color: #4C4B16;
   color: white;
-}
-
-h2 {
-  color: #333;
 }
 
 .navbar-img {
@@ -241,11 +237,6 @@ h2 {
   justify-content: center;
   align-items: center;
 
-  background: linear-gradient(to right, #FA4032, #FA812F);
-  mask-image: url('/paint4.png');
-  mask-size: 100% 100%;
-  mask-repeat: no-repeat;
-
   color: white;
   text-align: center;
   font-weight: bold;
@@ -307,15 +298,6 @@ h2 {
   outline: none;
 }
 
-
-.text-inside-container {
-  font-size: 1em;
-  font-weight: bold;
-  color: black;
-  text-align: center;
-  padding: 20% 5%;
-}
-
 .text-container-courses {
   padding: 2%;
   align-content: center;
@@ -331,6 +313,12 @@ h2 {
 .course-title {
   font-weight: bold;
   font-size: 1.5em;
+}
+
+.courses-description {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
 }
 
 .courses-page {
@@ -378,7 +366,6 @@ h2 {
   margin: 0;
   max-width: min(400px, 90vh);
 }
-
 
 .intro-text {
   max-width: 92vh;
@@ -530,6 +517,7 @@ h2 {
   gap: 30px;
   justify-content: center;
   text-align: center;
+  padding: 20px;
 }
 
 .gallery-page button {
