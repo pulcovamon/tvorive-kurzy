@@ -60,7 +60,7 @@ body {
   -webkit-mask-repeat: no-repeat;
   mask-image: url('/paint6.png');;
   mask-position: top;
-  mask-size: 70% 250%;
+  mask-size: 50% 250%;
   mask-repeat: no-repeat;
 }
 
@@ -221,6 +221,7 @@ body {
   justify-content: center;
   margin: 10px;
   padding: 10px;
+  align-items: center;
 }
 
 .text-container {
@@ -351,6 +352,7 @@ body {
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
+  align-items: center;
 }
 
 .info-page {
@@ -361,6 +363,7 @@ body {
   padding-left: 0;
   padding-right: 0;
   max-width: 90vh;
+  align-items: center;
 }
 
 .text-inside-container-info {
@@ -369,6 +372,7 @@ body {
   padding: 0;
   max-width: 1000px;
   line-height: 35px;
+  align-items: center;
 }
 
 .avatar {
