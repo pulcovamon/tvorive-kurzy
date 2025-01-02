@@ -14,6 +14,7 @@ import Info from "./pages/Info";
 import Contacts from "./pages/Contacts";
 import AboutMe from "./pages/AboutMe";
 import Gallery from "./pages/Gallery";
+import Footer from "./components/Footer";
 
 const images = [
   "469081208_122168847446249789_5586547136073549947_n.jpg",
@@ -36,6 +37,8 @@ const AppContent: React.FC = () => {
   const [navbarVisible, setNavbarVisible] = useState(false);
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
   const location = useLocation();
+
+  const emailAddress = "tvorive.kurzy.eva@gmail.com";
 
   useEffect(() => {
     const handleResize = () => {
@@ -87,6 +90,7 @@ const AppContent: React.FC = () => {
         width={250}
       />
 
+      <div className="wrapper">
       <div className="content">
         <Routes>
           <Route path="/" element={<Home images={images} />} />
@@ -95,6 +99,9 @@ const AppContent: React.FC = () => {
           <Route path="/o-me" element={<AboutMe />} />
           <Route path="/galerie" element={<Gallery images={images} />} />
         </Routes>
+      </div>
+
+      <Footer emailAddress={emailAddress} />
       </div>
     </div>
   );

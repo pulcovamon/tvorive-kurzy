@@ -44,20 +44,66 @@ body {
   mask-repeat: no-repeat;
 }
 
+.footer {
+  background: linear-gradient(to right, #4C4B16, #898121);
+  margin-top: 0;
+  width: 100vw;
+  text-align: center;
+  color: white;
+
+  -webkit-mask-image: url('/paint.png');
+  -webkit-mask-position: top;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: url('/paint6.png');;
+  mask-position: top;
+  mask-size: 70% 250%;
+  mask-repeat: no-repeat;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+  color: #FA812F;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
 }
 
 .app-container {
-  display: flex;
-  flex-direction: row;
   margin: 0;
   padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
   margin-top: 15vh;
+  position: relative;
 }
 
 .navbar {
@@ -112,16 +158,6 @@ body {
   color: white;
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  padding: 20px;
-  margin-left: 250px;
-  margin-right: 250px;
-}
-
 h2 {
   color: #333;
 }
@@ -129,6 +165,7 @@ h2 {
 .navbar-img {
   position: fixed;
   bottom: 0;
+  z-index: 5;
 }
 
 .background-palette {
@@ -136,7 +173,7 @@ h2 {
   position: fixed;
   right: -250px;
   top: 10vh;
-  z-index: 5;
+  z-index: -1;
 }
 
 .background-palette2 {
@@ -144,7 +181,7 @@ h2 {
   position: fixed;
   right: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: -1;
 }
 
 .icon {
