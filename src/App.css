@@ -117,7 +117,7 @@ body {
 .page-container {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
-  max-width: 90vw;
+  max-width: 80vw;
 }
 
 .navbar {
@@ -244,7 +244,7 @@ body {
   word-wrap: break-word;
   line-height: 2;
   text-align: left;
-  max-width: min(90vw, 600px);
+  max-width: min(80vw, 600px);
   margin: 0;
   padding: 0;
 }
@@ -312,7 +312,7 @@ body {
   margin-top: 40px;
   padding-left: 0;
   padding-right: 0;
-  max-width: 90vh;
+  max-width: 80vw;
   align-items: center;
 }
 
@@ -320,7 +320,7 @@ body {
   font-size: 1.2em;
   color: black;
   padding: 0;
-  max-width: 1000px;
+  max-width: min(1000px, 70vw);
   line-height: 35px;
   align-items: center;
 }
@@ -344,11 +344,11 @@ body {
 .lecturer-intro {
   padding: 0;
   margin: 0;
-  max-width: min(400px, 90vh);
+  max-width: min(400px, 70vw);
 }
 
 .intro-text {
-  max-width: 92vh;
+  max-width: 70vw;
 }
 
 .hamburger {

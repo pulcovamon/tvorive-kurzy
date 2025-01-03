@@ -10,32 +10,31 @@ const Info = () => {
             <b>Kurz kresby a malby</b>{" "}
             <FontAwesomeIcon icon={faPalette} />
           </h1>
-            <img src="line.png" height={10} width={"100%"} />
-            <i>
-              Pro ty, co si chteji zkusit neco noveho i jako priprava na talentove zkousky.
-            </i> <br />
-            <br />
-            <div className="courses-description">
-              <div>
-              <b>Cena:</b> 3000 kč za <i>n</i> lekcí <br />
-            <b>Kde:</b> Praha <br />
-            <b>kdy:</b> Každé liché úterý 18:00-20:00 <br />
-            <b>Kapacita:</b> 5-8 studentu <br />
-            <br />
-            <b>Ukazkova hodina zdarma 19. 9. 2024</b>
-              </div>
-
-            
+          <img src="line.png" height={10} width={"100%"} alt="Čára oddělující text" />
+          <i>
+            Pro ty, co si chtějí zkusit něco nového, i jako příprava na talentové zkoušky.
+          </i> 
+          <br />
+          <br />
+          <div className="courses-description">
+            <div>
+              <b>Cena:</b> 3000 Kč za <i>n</i> lekcí <br />
+              <b>Kde:</b> Praha <br />
+              <b>Kdy:</b> Každé liché úterý 18:00–20:00 <br />
+              <b>Kapacita:</b> 5–8 studentů <br />
+              <br />
+              <b>Ukázková hodina zdarma 19. 9. 2024</b>
+            </div>
             <br />
             <ul className="topics">
-              <li>Zaklady kresby podle predlohy</li>
-              <li>Mereni</li>
-              <li>Stinovani</li>
+              <li>Základy kresby podle předlohy</li>
+              <li>Měření</li>
+              <li>Stínování</li>
               <li>Perspektiva</li>
-              <li>Ruzne techniky kresby a malby</li>
-              <li>Malba v pleneru</li>
+              <li>Různé techniky kresby a malby</li>
+              <li>Malba v plenéru</li>
             </ul>
-            </div>
+          </div>
         </div>
       </div>
     </div>
