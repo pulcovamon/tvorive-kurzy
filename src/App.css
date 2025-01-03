@@ -202,7 +202,7 @@ body {
 
 .home-page {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 25px;
   justify-content: center;
   margin: 10px;
@@ -211,36 +211,32 @@ body {
 }
 
 .logo-img {
-  width: min(90vw, 400px);
+  width: min(50vw, 300px);
 }
 
 .text-container {
+  display: flex;
   flex-grow: 1;
   max-width: 800px;
   align-content: center;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  width: 100%;
 }
 
-.brush-effect {
-  font-size: 1em;
-  text-align: center;
-  padding: 2%;
-  background: linear-gradient(to right, #fa4032, #fa812f);
-  mask-image: url("/paint4.png");
-  mask-size: 100% 100%;
-  mask-repeat: no-repeat;
+.text-sections {
+  display: flex;
+  transition: transform 1s ease;
+  width: 300%;
 }
 
-.brush-effect-info {
-  font-size: 1em;
-  text-align: center;
+.section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  padding-top: 50px;
-  background: linear-gradient(to right, #fa4032, #fa812f);
-  mask-image: url("/paint2.png");
-  mask-size: 100% 100%;
-  mask-repeat: no-repeat;
 }
 
 .welcome-text {
@@ -251,6 +247,30 @@ body {
   max-width: min(90vw, 600px);
   margin: 0;
   padding: 0;
+}
+
+.dot-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #898121;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #4c4b16;
+}
+
+.dot:hover {
+  background-color: #4c4b16;
 }
 
 .text-container-courses {
