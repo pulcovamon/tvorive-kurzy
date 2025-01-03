@@ -12,7 +12,7 @@ const AboutMe = () => {
                         O mně{" "}
                         <FontAwesomeIcon icon={faHandPointLeft} />
                       </h1>
-                      <img src="line.png" alt="Oddělovač" height={10} width="100%" />
+                      <img src="line.png" alt="Oddělovač" height={10} width="100%" loading="lazy" />
                       <p className="intro-text">
                           Ahoj, jmenuji se Eva. Jsem ilustrátorka knih pro děti s desetiletou praxí ve výuce kresby,
                           malby, různých výtvarných technik a přípravě na talentové zkoušky.

@@ -90,6 +90,7 @@ const CoverImage = ({
             src={image}
             className="cover-image"
             alt={`cover-image-${index}`}
+            loading="lazy"
           />
         ))}
       </div>
