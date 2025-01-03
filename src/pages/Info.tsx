@@ -1,5 +1,6 @@
 import { faPalette } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import fireConfetti from "../utils/confetti";
 
 const Info = () => {
   return (
@@ -23,7 +24,9 @@ const Info = () => {
               <b>Kdy:</b> Každé liché úterý 18:00–20:00 <br />
               <b>Kapacita:</b> 5–8 studentů <br />
               <br />
+              <div className="free-lesson" onMouseEnter={fireConfetti}>
               <b>Ukázková hodina zdarma 19. 9. 2024</b>
+              </div>
             </div>
             <br />
             <ul className="topics">

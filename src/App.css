@@ -388,6 +388,10 @@ body {
   font-style: italic;
 }
 
+.free-lesson:hover {
+  color: red;
+}
+
 .contacts-page {
   line-height: 50px;
   display: flex;
