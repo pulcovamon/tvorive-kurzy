@@ -2,7 +2,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSquareFacebook,
-  faSquareInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faBus,
@@ -82,7 +81,7 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
           </p>
         </div>
       </div>
-      
+
       <div className="contact-map">
         <iframe
           title="Mapa"

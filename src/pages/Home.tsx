@@ -1,6 +1,4 @@
-import Slideshow from "../components/Slideshow";
-
-const Home = ({ images }: { images: string[] }) => {
+const Home = () => {
   return (
     <div className="home-page">
             <div>
