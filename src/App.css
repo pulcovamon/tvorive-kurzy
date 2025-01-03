@@ -118,7 +118,8 @@ body {
 .page-container {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 20px;
-  max-width: 80vw;
+  max-width: 90vw;
+  margin: 0;
   justify-content: center;
   align-items: center;
   text-align: left;
@@ -240,7 +241,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .welcome-text {
@@ -248,7 +249,7 @@ body {
   word-wrap: break-word;
   line-height: 2;
   text-align: left;
-  max-width: min(80vw, 600px);
+  max-width: min(90vw, 600px);
   margin: 0;
   padding: 0;
 }
@@ -313,10 +314,9 @@ body {
   justify-content: center;
   margin-left: 0;
   margin-right: 0;
-  margin-top: 40px;
   padding-left: 0;
   padding-right: 0;
-  max-width: 80vw;
+  max-width: 90vw;
   align-items: center;
 }
 
@@ -324,7 +324,7 @@ body {
   font-size: 1.2em;
   color: black;
   padding: 0;
-  max-width: min(1000px, 70vw);
+  max-width: min(1000px, 80vw);
   line-height: 35px;
   align-items: center;
 }
@@ -332,13 +332,15 @@ body {
 .avatar {
   border-radius: 50%;
   width: 300px;
+  padding: 0;
+  margin: 0;
 }
 
 .lecturer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 100px;
+  gap: 50px;
   align-items: center;
   padding: 0;
   margin: 0;
@@ -348,11 +350,11 @@ body {
 .lecturer-intro {
   padding: 0;
   margin: 0;
-  max-width: min(400px, 70vw);
+  max-width: min(400px, 90vw);
 }
 
 .intro-text {
-  max-width: 70vw;
+  max-width: 80vw;
 }
 
 .hamburger {
