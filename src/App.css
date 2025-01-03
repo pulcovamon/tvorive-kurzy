@@ -572,11 +572,9 @@ body {
   max-height: 80vh;
   display: flex;
   height: 100%;
-  width: 100%;
 }
 
 .cover-image {
-  height: 100%;
   width: 100%;
   object-fit: contain;
   border-radius: 8px;
@@ -735,5 +733,12 @@ body {
 
   .content {
     margin-top: 10vh;
+  }
+
+  .cover-image-container .left-button,
+  .cover-image-container .right-button {
+    position: absolute;
+    bottom: 10%;
+    font-size: 1.5em;
   }
 }
