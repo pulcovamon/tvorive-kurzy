@@ -233,7 +233,7 @@ body {
 .text-sections {
   display: flex;
   transition: transform 1s ease;
-  width: 300%;
+  width: 500%;
 }
 
 .section {
@@ -252,6 +252,7 @@ body {
   max-width: min(90vw, 600px);
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .dot-container {
@@ -546,6 +547,10 @@ body {
 }
 
 .gallery-page {
+  text-align: center;
+}
+
+.gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -557,7 +562,7 @@ body {
   overflow: hidden;
 }
 
-.gallery-page button {
+.gallery button {
   border: none;
 }
 

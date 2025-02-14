@@ -1,6 +1,8 @@
 import { useState } from "react";
 import CoverImage from "../components/CoverImage";
 import ImagePreview from "../components/ImagePreview";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faImages } from "@fortawesome/free-solid-svg-icons";
 
 const Gallery = ({ images }: { images: string[] }) => {
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
@@ -21,6 +23,11 @@ const Gallery = ({ images }: { images: string[] }) => {
 
   return (
     <div className="gallery-page">
+      <h1>Galerie{" "}
+        <FontAwesomeIcon icon={faImages} />
+      </h1>
+      <img src="line.png" height={10} width={"50%"} />
+    <div className="gallery">
       {imageComponents}
       {currentIndex !== null && (
         <CoverImage
@@ -30,6 +37,7 @@ const Gallery = ({ images }: { images: string[] }) => {
           closeImage={closeImage}
         />
       )}
+    </div>
     </div>
   );
 };

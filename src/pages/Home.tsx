@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 
 const Home = () => {
   const [index, setIndex] = useState(0);
-  const totalSections = 3;
+  const totalSections = 5;
 
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % totalSections);
-    }, 5000);
+    }, 7500);
 
     return () => clearInterval(interval);
   }, []);
@@ -25,26 +25,39 @@ const Home = () => {
         <div
           className="text-sections"
           style={{
-            transform: `translateX(-${index * 100/3}%)`,
+            transform: `translateX(-${index * 100/5}%)`,
           }}
         >
           <div className="section">
             <p className="welcome-text">
               Vítejte v ateliéru, kde se naučíte kreslit, malovat a rozvíjet
-              své výtvarné dovednosti. Nabízím kurzy kresby, malby pro všechny
-              úrovně – od začátečníků po pokročilé.
+              své výtvarné dovednosti.
             </p>
           </div>
           <div className="section">
             <p className="welcome-text">
-              Pod vedením zkušené lektorky Evy získáte praktické znalosti,
-              osvojíte si nové techniky a objevíte svůj vlastní umělecký styl.
+            Rádi byste se naučili něco nového, připravujete se na přijímačky
+            nebo chcete jen relaxovat se štětcem v ruce?
             </p>
           </div>
           <div className="section">
             <p className="welcome-text">
-              Přijďte zažít radost z učení i tvoření a vytvořit něco jedinečného.
-              Těšíme se na vás!
+              Nebojte se vzít do ruky tužku a štětec. Nejlepší je začít hned.
+              Kreslit se naučí každý, kdo chce!
+            </p>
+          </div>
+          <div className="section">
+            <p className="welcome-text">
+            Tvořivé kurzy jsou pro
+              začátečníky i pokročilé, děti i dospělé,
+              prostě všechny, kdo rádi tvoří.
+            </p>
+          </div>
+          <div className="section">
+            <p className="welcome-text">
+              Přijďte zažít radost z malování, objevit svůj umělecký styl
+              a vytvořit něco jedinečného.
+              Těším se na vás!
             </p>
           </div>
         </div>

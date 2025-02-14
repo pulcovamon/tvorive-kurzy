@@ -111,7 +111,7 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
             kolem supermarketu Billa a dále do ulice Kutilova.
           </li>
           <li>
-            <b>Zastávka Družná:</b> Autobusy 117, 190, 139, 150, 157. Projděte
+            <b>Zastávka Družná:</b> Autobus 190. Projděte
             průchodem mezi paneláky do ulice Milerova, pokračujte vlevo do ulice
             Krouzova a dalším průchodem mezi paneláky vpravo do ulice Kutilova.
           </li>
