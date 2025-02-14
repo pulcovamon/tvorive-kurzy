@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the Vite app
-RUN vite build
+RUN npm run build
 
 # Use an official Nginx runtime as a parent image
 FROM nginx:alpine
