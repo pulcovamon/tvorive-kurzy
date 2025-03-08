@@ -118,6 +118,7 @@ body {
 
 .page-container {
   background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
   padding: 20px;
   max-width: 90vw;
   margin: 0;
@@ -397,12 +398,37 @@ body {
 }
 
 .topics {
-  list-style-type: square;
-  font-style: italic;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 600px;
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  position: relative;
 }
 
-.free-lesson:hover {
-  color: red;
+.topics li {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid #4c4b16;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.topics li:nth-child(odd) {
+  transform: rotate(-3deg);
+}
+
+.topics li:nth-child(even) {
+  transform: rotate(3deg);
+}
+
+.topics li:hover {
+  transform: scale(1.1);
 }
 
 .contacts-page {
@@ -788,22 +814,37 @@ body {
 
 .cards {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 25px;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  max-width: 900px;
+  margin: 25px auto;
 }
 
 .course-card {
-  border-style: solid;
-  border-color: #4c4b16;
+  border: 2px solid #4c4b16;
   border-radius: 25px;
   padding: 25px;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
+  width: 280px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  position: relative;
 }
+
+.course-card:nth-child(odd) {
+  transform: rotate(-3deg);
+}
+
+.course-card:nth-child(even) {
+  transform: rotate(3deg);
+}
+
+.course-card:hover {
+  transform: scale(1.05) rotate(0deg);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
 
 .course-card  a {
   color: black;
@@ -828,4 +869,15 @@ body {
 
 .course-card  a:hover {
   color: #4c4b16;
+}
+
+.courses-description {
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  margin-top: 25px;
+  display: inline-block;
 }

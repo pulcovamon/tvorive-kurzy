@@ -10,7 +10,7 @@ function Info() {
       time: "17:00-19:00",
       place: (
         <Link to="https://en.frame.mapy.cz/s/cucahujopo" target="_blank">
-          Kutilova 3067/12, 143 00 Praha 12 - Modřany, Česko
+          Praha - Kutilova
         </Link>
       ),    },
     {
@@ -19,7 +19,7 @@ function Info() {
       time: "17:00-19:00",
       place: (
         <Link to="https://en.frame.mapy.cz/s/cucahujopo" target="_blank">
-          Kutilova 3067/12, 143 00 Praha 12 - Modřany, Česko
+          Praha - Kutilova
         </Link>
       ),
     },
@@ -29,7 +29,7 @@ function Info() {
       time: "18:00-20:00",
       place: (
         <Link to="https://en.mapy.cz/s/jocekunute" target="_blank">
-          KC Zdiby, Průběžná 114/114, 250 66 Zdiby-Veltěž
+          KC Zdiby
         </Link>
       ),    },
   ];
@@ -67,7 +67,9 @@ function Info() {
           tvořivosti.
           <br />
           <br />
-          Co se na kurzu naucite?
+          <h2>
+          Co se na kurzu naučíte?
+          </h2>
           <ul className="topics">
             <li>Základy kresby podle předlohy</li>
             <li>Měření</li>
