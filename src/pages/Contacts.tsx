@@ -51,11 +51,11 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
           </p>
           <p>
             <Link
-              to="https://www.google.com/maps/place/Kutilova,+143+00+Praha+12/@50.012754,14.4187667,17z/data=!3m1!4b1!4m6!3m5!1s0x470b914ca83cd5b5:0x51b714f5f6e41a7!8m2!3d50.012754!4d14.4213416!16s%2Fg%2F1tl_kf5z?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+            to="https://en.frame.mapy.cz/s/cucahujopo"
               target="_blank"
             >
               <FontAwesomeIcon className="contact-icon" icon={faLocationDot} />{" "}
-              Kutilova xyz, Praha 12 - Modřany, 143 00
+              Kutilova 3067/12, 143 00 Praha 12 - Modřany, Česko
             </Link>
           </p>
           <p>
@@ -88,8 +88,7 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
           width={mapSize}
           height={mapSize}
           style={{ border: 0 }}
-          loading="lazy"
-          src="https://maps.google.com/maps?width=350&amp;height=350&amp;hl=en&amp;q=kutilova&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://en.frame.mapy.cz/s/cucahujopo"
         ></iframe>
       </div>
       <div className="how-to-get-here">

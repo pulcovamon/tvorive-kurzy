@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fauna+One&family=Cinzel:wght@700&display=swap");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -282,6 +283,7 @@ body {
 .text-container-courses {
   padding: 2%;
   align-content: center;
+  width: 100%;
 }
 
 .text-inside-container-courses {
@@ -289,6 +291,7 @@ body {
   color: black;
   text-align: center;
   padding: 15%;
+  width: 100%;
 }
 
 .course-title {
@@ -301,6 +304,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 25px;
+  width: 100%;
 }
 
 .courses-page {
@@ -319,6 +323,7 @@ body {
   padding-right: 0;
   max-width: 90vw;
   align-items: center;
+  width: 100%;
 }
 
 .text-inside-container-info {
@@ -328,6 +333,7 @@ body {
   max-width: min(1000px, 80vw);
   line-height: 35px;
   align-items: center;
+  width: 100%;
 }
 
 .avatar {
@@ -778,4 +784,48 @@ body {
     top: auto;
     font-size: 1.5em;
   }
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 25px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.course-card {
+  border-style: solid;
+  border-color: #4c4b16;
+  border-radius: 25px;
+  padding: 25px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.course-card  a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+
+.course-card  a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #4c4b16;
+  transition: width 0.3s ease-in-out;
+}
+
+.course-card  a:hover::before {
+  width: 100%;
+}
+
+.course-card  a:hover {
+  color: #4c4b16;
 }

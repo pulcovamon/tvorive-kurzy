@@ -1,8 +1,38 @@
-import { faPalette } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faPalette } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Schedule from "../components/Schedule";
+import { Link } from "react-router-dom";
 
-const Info = () => {
+function Info() {
+  const courses = [
+    {
+      name: "Kurz kresby a malby Modřany",
+      day: "Středa",
+      time: "17:00-19:00",
+      place: (
+        <Link to="https://en.frame.mapy.cz/s/cucahujopo" target="_blank">
+          Kutilova 3067/12, 143 00 Praha 12 - Modřany, Česko
+        </Link>
+      ),    },
+    {
+      name: "Kurz kresby a malby Modřany",
+      day: "Čtvrtek",
+      time: "17:00-19:00",
+      place: (
+        <Link to="https://en.frame.mapy.cz/s/cucahujopo" target="_blank">
+          Kutilova 3067/12, 143 00 Praha 12 - Modřany, Česko
+        </Link>
+      ),
+    },
+    {
+      name: "Kurz kresby a malby Zdiby",
+      day: "Každé sudé úterý",
+      time: "18:00-20:00",
+      place: (
+        <Link to="https://en.mapy.cz/s/jocekunute" target="_blank">
+          KC Zdiby, Průběžná 114/114, 250 66 Zdiby-Veltěž
+        </Link>
+      ),    },
+  ];
   return (
     <div className="info-page">
       <div className="text-container-courses">
@@ -30,54 +60,48 @@ const Info = () => {
           <br />
           <br />
           Kurz je určen starším dětem i dospělým a je jedno, jestli s kreslením
-          začínáte nebo si chcete oprášit starší dovednosti. Kurz je vhodný třeba jako{" "}
-          <b>příprava na talentové zkoušky</b>, ale na své si přijdete, i když
-          chcete jen v klidu relaxovat po práci, na chvíli opustit starosti
-          všedních dní a jen se ponořit do hlubin své tvořivosti.
+          začínáte nebo si chcete oprášit starší dovednosti. Kurz je vhodný
+          třeba jako <b>příprava na talentové zkoušky</b>, ale na své si
+          přijdete, i když chcete jen v klidu relaxovat po práci, na chvíli
+          opustit starosti všedních dní a jen se ponořit do hlubin své
+          tvořivosti.
           <br />
           <br />
           Co se na kurzu naucite?
           <ul className="topics">
-              <li>Základy kresby podle předlohy</li>
-              <li>Měření</li>
-              <li>Stínování</li>
-              <li>Perspektiva</li>
-              <li>Různé techniky kresby a malby</li>
-              <li>Malba v plenéru</li>
-            </ul>
-            <br/>
+            <li>Základy kresby podle předlohy</li>
+            <li>Měření</li>
+            <li>Stínování</li>
+            <li>Perspektiva</li>
+            <li>Různé techniky kresby a malby</li>
+            <li>Malba v plenéru</li>
+          </ul>
+          <br />
           <div className="courses-description">
             <div>
-              <b>Věk</b>: od cca 10 let<br/>
-              <b>Kapacita:</b> 5–8 studentů <br />
+              <b>Věk</b>: od cca 10 let
               <br />
-              <h1>Kurzy</h1>
-              <Schedule courses={[
-                {
-                  place: "KC Zdiby, každý sudý týden",
-                  time: "18:00-20:00",
-                  days: ["Tuesday"],
-                  price: [3000, 2000]
-                },
-                {
-                  place: "Praha Modřany - Kutilova ulice",
-                  time: "17:00-19:00",
-                  days: ["Wednesday"],
-                  price: [3000, 2000]
-                },
-                {
-                  place: "Praha Modřany - Kutilova ulice",
-                  time: "17:00-19:00",
-                  days: ["Thursday"],
-                  price: [3000, 2000]
-                }
-              ]} />
+              <b>Kapacita:</b> 5–8 studentů <br />
+              <b>Cena:</b> 3000 kč (3 měsíce) / 2000 kč (2 měsíce)
+              <br />
+              <div className="cards">
+                {courses.map((course) => {
+                  return (
+                    <div className="course-card">
+                      <h4>{course.name}</h4>
+                      <b>Kde:</b> {course.place} <br />
+                      <b>Kdy:</b> {course.day} <br />
+                      <b>V kolik:</b> {course.time}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Info;
