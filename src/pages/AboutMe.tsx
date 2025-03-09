@@ -6,7 +6,7 @@ const AboutMe = () => {
     <div className="info-page">
       <div className="text-inside-container-info">
         <div className="lecturer">
-          <img className="avatar" src="avatar.jpg" alt="Profilová fotografie" />
+          <img className="avatar" src="profile-pic.jpg" alt="Profilová fotografie" />
           <div className="lecturer-intro">
             <h1 className="course-title">
               O mně <FontAwesomeIcon icon={faHandPointLeft} />
