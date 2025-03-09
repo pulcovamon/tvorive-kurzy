@@ -46,7 +46,7 @@ body {
   color: white;
   text-align: center;
   background: linear-gradient(to right, #4c4b16, #898121);
-  mask-image: url("/paint3.png");
+  mask-image: url("/paint1.png");
   padding: 1%;
   margin: 0;
   mask-size: 100% 100%;
@@ -756,7 +756,7 @@ body {
     color: white;
     text-align: center;
     background: linear-gradient(to right, #4c4b16, #898121);
-    mask-image: url("/paint3.png");
+    mask-image: url("/paint1.png");
     padding: 1%;
     margin: 0;
     mask-size: 120% 100%;

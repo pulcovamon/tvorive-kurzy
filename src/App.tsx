@@ -74,7 +74,7 @@ const AppContent: React.FC = () => {
   return (
     <div className="app-container">
       <img
-        src="palette2.png"
+        src="background-palette.png"
         className="background-palette"
       />
 
