@@ -59,9 +59,9 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
             </Link>
           </p>
           <p>
-            <Link to="tel:+420123456789">
+            <Link to="tel:+420604194495">
               <FontAwesomeIcon className="contact-icon" icon={faPhone} />{" "}
-              +420 123 456 789
+              +420 604 194 495
             </Link>
           </p>
           <p>
