@@ -1,4 +1,7 @@
-import { faPalette } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowUpRightFromSquare,
+  faPalette,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { emailAddress } from "./Contacts";
@@ -11,16 +14,17 @@ function Info() {
       time: "17:00-19:00",
       place: (
         <Link to="https://en.frame.mapy.cz/s/cucahujopo" target="_blank">
-          Praha - Kutilova
+          Praha - Kutilova <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
         </Link>
-      ),    },
+      ),
+    },
     {
       name: "Kurz kresby a malby Modřany",
       day: "Čtvrtek",
       time: "14:15-16:15",
       place: (
         <Link to="https://en.frame.mapy.cz/s/cucahujopo" target="_blank">
-          Praha - Kutilova
+          Praha - Kutilova <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
         </Link>
       ),
     },
@@ -30,9 +34,10 @@ function Info() {
       time: "18:00-20:00",
       place: (
         <Link to="https://en.mapy.cz/s/jocekunute" target="_blank">
-          KC Zdiby
+          KC Zdiby <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
         </Link>
-      ),    },
+      ),
+    },
   ];
   return (
     <div className="info-page">
@@ -68,9 +73,7 @@ function Info() {
           tvořivosti.
           <br />
           <br />
-          <h2>
-          Co se na kurzu naučíte?
-          </h2>
+          <h2>Co se na kurzu naučíte?</h2>
           <ul className="topics">
             <li>Základy kresby podle předlohy</li>
             <li>Měření</li>
@@ -80,17 +83,17 @@ function Info() {
             <li>Malba v plenéru</li>
           </ul>
           <div className="courses-description">
-          <h2>
-          Co potřebujete vědět?
-          </h2>
+            <h2>Co potřebujete vědět?</h2>
             <div>
               <b>Věk</b>: od cca 10 let
               <br />
               <b>Kapacita:</b> 5–8 studentů <br />
               <b>Cena:</b> 3000 kč (3 měsíce) / 2000 kč (2 měsíce) <br />
-              <b>Přihlašování:</b> přes email <Link to={`mailto:${emailAddress}`}>
-                            {` ${emailAddress}`}
-                          </Link>
+              <b>Přihlašování:</b>{" "}
+              <Link to="https://forms.gle/jzHdaYo6HAZVqGqBA" target="_blank">
+                Přihlašovací formulář{" "}
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              </Link>{" "}
               <br />
               <div className="cards">
                 {courses.map((course) => {
@@ -99,11 +102,13 @@ function Info() {
                       <h4>{course.name}</h4>
                       <b>Kde:</b> {course.place} <br />
                       <b>Kdy:</b> {course.day} <br />
-                      <b>V kolik:</b> {course.time}
+                      <b>V kolik:</b> {course.time} <br />
                     </div>
                   );
                 })}
               </div>
+              Pokud máte jakékoli otázky, neváhejte se mi ozvat na email <Link to={`mailto:${emailAddress}`}>{` ${emailAddress}`}</Link>.
+              <br />
             </div>
           </div>
         </div>
