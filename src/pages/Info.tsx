@@ -88,7 +88,8 @@ function Info() {
               <b>Věk</b>: od cca 10 let
               <br />
               <b>Kapacita:</b> 5–8 studentů <br />
-              <b>Cena:</b> 3000 kč (3 měsíce) / 2000 kč (2 měsíce) <br />
+              <b>Trvání kurzu:</b> 3 měsíce <br />
+              <b>Cena:</b> 3 000 kč <br />
               <b>Přihlašování:</b>{" "}
               <Link to="https://forms.gle/jzHdaYo6HAZVqGqBA" target="_blank">
                 Přihlašovací formulář{" "}
