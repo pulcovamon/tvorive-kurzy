@@ -1,6 +1,7 @@
 import { faPalette } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import { emailAddress } from "./Contacts";
 
 function Info() {
   const courses = [
@@ -16,7 +17,7 @@ function Info() {
     {
       name: "Kurz kresby a malby Modřany",
       day: "Čtvrtek",
-      time: "17:00-19:00",
+      time: "14:15-16:15",
       place: (
         <Link to="https://en.frame.mapy.cz/s/cucahujopo" target="_blank">
           Praha - Kutilova
@@ -78,13 +79,18 @@ function Info() {
             <li>Různé techniky kresby a malby</li>
             <li>Malba v plenéru</li>
           </ul>
-          <br />
           <div className="courses-description">
+          <h2>
+          Co potřebujete vědět?
+          </h2>
             <div>
               <b>Věk</b>: od cca 10 let
               <br />
               <b>Kapacita:</b> 5–8 studentů <br />
-              <b>Cena:</b> 3000 kč (3 měsíce) / 2000 kč (2 měsíce)
+              <b>Cena:</b> 3000 kč (3 měsíce) / 2000 kč (2 měsíce) <br />
+              <b>Přihlašování:</b> přes email <Link to={`mailto:${emailAddress}`}>
+                            {` ${emailAddress}`}
+                          </Link>
               <br />
               <div className="cards">
                 {courses.map((course) => {

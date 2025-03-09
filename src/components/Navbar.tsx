@@ -12,7 +12,7 @@ const Navbar = ({
     <div className="navbar-shadow">
     <ul className="navbar-list">
       <NavbarItem location={location} to="/" iconClass="fa fa-home" label="Domů" />
-      <NavbarItem location={location} to="/o-me" iconClass="fa fa-user" label="O mě" />
+      <NavbarItem location={location} to="/o-mne" iconClass="fa fa-user" label="O mně" />
       <NavbarItem location={location} to="/info" iconClass="fa fa-info" label="Info" />
       <NavbarItem location={location} to="/galerie" iconClass="fa fa-image" label="Galerie" />
       <NavbarItem location={location} to="/kontakty" iconClass="fa fa-envelope" label="Kontakty" />

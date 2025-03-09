@@ -846,13 +846,13 @@ body {
 }
 
 
-.course-card  a {
+.courses-description  a {
   color: black;
   text-decoration: none;
   position: relative;
 }
 
-.course-card  a::before {
+.courses-description  a::before {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -863,16 +863,16 @@ body {
   transition: width 0.3s ease-in-out;
 }
 
-.course-card  a:hover::before {
+.courses-description  a:hover::before {
   width: 100%;
 }
 
-.course-card  a:hover {
+.courses-description  a:hover {
   color: #4c4b16;
 }
 
 .courses-description {
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   background-color: rgba(255, 255, 255, 0.6);
   padding: 15px;

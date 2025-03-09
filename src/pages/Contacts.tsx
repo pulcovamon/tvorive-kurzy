@@ -15,6 +15,8 @@ import {
 import { Link } from "react-router-dom";
 //import emailjs from "emailjs-com";
 
+export const emailAddress = "tvorive.kurzy.eva@gmail.com";
+
 const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
   // function sendEmail(e: React.FormEvent<HTMLFormElement>) {
   //   e.preventDefault();
@@ -37,8 +39,6 @@ const Contacts = ({ isDesktop }: { isDesktop: boolean }) => {
 
   const mapSize = isDesktop ? "350px" : "300px";
   //const messageTextArea = isDesktop ? "message-desktop" : "message-phone";
-
-  const emailAddress = "tvorive.kurzy.eva@gmail.com";
 
   return (
     <div className="contacts-page">

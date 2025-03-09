@@ -88,7 +88,7 @@ const AppContent: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/info" element={<Info />} />
           <Route path="/kontakty" element={<Contacts isDesktop={isDesktop} />} />
-          <Route path="/o-me" element={<AboutMe />} />
+          <Route path="/o-mne" element={<AboutMe />} />
           <Route path="/galerie" element={<Gallery images={images} />} />
         </Routes>
         </div>
